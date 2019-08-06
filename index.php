@@ -18,6 +18,10 @@
       ))
     </script>
 
+
+
+
+
 <main role="main" style="padding-top: 83px; background-color: #d2d6dc;">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -45,6 +49,9 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+
+
+
 
 
   <!-- Marketing messaging and features -->
@@ -80,15 +87,19 @@
     </div><!-- /.row -->
 
 
+
+
+
+    <!-- Recommended Games -->
     <div class="text-left" style="padding-top: 25px;">
-      <h4>Recommended for you</h4>
+      <h4>Recommended Games for you</h4>
     </div>
 
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    <div id="Game" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#Game" data-slide-to="0" class="active"></li>
+        <li data-target="#Game" data-slide-to="1"></li>
+        <li data-target="#Game" data-slide-to="2"></li>
       </ol><!-- Carousel-indicators end -->
 
       <!-- recommended carousel start -->
@@ -195,16 +206,147 @@
         </div><!-- carousel item end -->
 
 
-        <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#Game" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#Game" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       </div><!-- carousel-slider end -->
     </div><!-- container -->
+
+
+    <hr>
+
+
+  <!-- console recommendations -->
+  <div class="text-left" style="padding-top: 25px;">
+    <h4>Recommended Consoles for you</h4>
+  </div>
+
+  <div id="Consoles" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#Consoles" data-slide-to="0" class="active"></li>
+      <li data-target="#Consoles" data-slide-to="1"></li>
+      <li data-target="#Consoles" data-slide-to="2"></li>
+    </ol><!-- Carousel-indicators end -->
+
+    <!-- recommended carousel start -->
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active" href="#">
+        <div class="row">
+          <div class="col-md-2"></div><!-- empty div to force content center -->
+          <div class="col-md-4" style="padding-right: 5px;">
+            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="thumbnail" style="padding: 25px;">
+                <img src="img/consoleimg/XBOXOneSBlackIMG1.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                <div class="caption">
+                  <h3>Header Name</h3>
+                  <p>Description</p>
+                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                </div><!-- caption end -->
+              </div><!-- thumbnail end -->
+            </div><!-- Border end -->
+          </div><!-- col-md-4 end -->
+
+          <div class="col-md-4" style="padding-left: 5px;">
+            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="thumbnail" style="padding: 25px;">
+                <img src="img/consoleimg/XBOXOneSWhiteIMG1.jpg" alt="ALT NAME" class="img-responsive"
+                     style="width: 320px;"/>
+                <div class="caption">
+                  <h3>Header Name</h3>
+                  <p>Description</p>
+                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                </div><!-- caption end -->
+              </div><!-- thumbnail end -->
+            </div><!-- Border end -->
+          </div><!-- col-md-4 end -->
+          <div class="col-md-2"></div><!-- empty div to force content center -->
+        </div><!-- row end -->
+      </div><!-- carousel item end -->
+
+      <!-- Slide 2 -->
+      <div class="carousel-item" href="#">
+        <div class="row">
+          <div class="col-md-2"></div><!-- empty div to force content center -->
+          <div class="col-md-4" style="padding-right: 5px;">
+            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="thumbnail" style="padding: 25px;">
+                <img src="img/consoleimg/NintendoSwitchBlack.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                <div class="caption">
+                  <h3>Header Name</h3>
+                  <p>Description</p>
+                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                </div><!-- caption end -->
+              </div><!-- thumbnail end -->
+            </div><!-- Border end -->
+          </div><!-- col-md-4 end -->
+
+          <div class="col-md-4" style="padding-left: 5px;">
+            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="thumbnail" style="padding: 25px;">
+                <img src="img/consoleimg/NintendoSwitchRed.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                <div class="caption">
+                  <h3>Header Name</h3>
+                  <p>Description</p>
+                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                </div><!-- caption end -->
+              </div><!-- thumbnail end -->
+            </div><!-- Border end -->
+          </div><!-- col-md-4 end -->
+          <div class="col-md-2"></div><!-- empty div to force content center -->
+        </div><!-- row end -->
+      </div><!-- carousel item end -->
+
+      <!-- Slide 3 -->
+      <div class="carousel-item" href="#">
+        <div class="row">
+          <div class="col-md-2"></div><!-- empty div to force content center -->
+          <div class="col-md-4" style="padding-right: 5px;">
+            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="thumbnail" style="padding: 25px;">
+                <img src="img/consoleimg/PS4BlackIMG1.jpg" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                <div class="caption">
+                  <h3>Header Name</h3>
+                  <p>Description</p>
+                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                </div><!-- caption end -->
+              </div><!-- thumbnail end -->
+            </div><!-- Border end -->
+          </div><!-- col-md-4 end -->
+
+          <div class="col-md-4" style="padding-left: 5px;">
+            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="thumbnail" style="padding: 25px;">
+                <img src="img/consoleimg/PS4WhiteIMG1.webp" alt="ALT NAME" class="img-responsive"
+                     style="width: 320px;"/>
+                <div class="caption">
+                  <h3>Header Name</h3>
+                  <p>Description</p>
+                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                </div><!-- caption end -->
+              </div><!-- thumbnail end -->
+            </div><!-- Border end -->
+          </div><!-- col-md-4 end -->
+          <div class="col-md-2"></div><!-- empty div to force content center -->
+        </div><!-- row end -->
+      </div><!-- carousel item end -->
+
+
+      <a class="carousel-control-prev" href="#Consoles" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#Consoles" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- carousel-slider end -->
+  </div><!-- container -->
   </div><!-- container marketing end -->
 </main>
 

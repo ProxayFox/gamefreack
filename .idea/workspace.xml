@@ -30,11 +30,6 @@
     <expand />
     <select />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>212</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -47,6 +42,7 @@
   <component name="ProjectId" id="1P28jdfP49I2MWMklFjEUjQEMfC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
