@@ -7,7 +7,7 @@
       ))
     </script>
 
-    <main role="main" style="padding-top: 83px;">
+    <main role="main" style="padding-top: 83px; background-color: #d2d6dc;">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -41,129 +41,136 @@
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="img/svg/PlayStation_4.svg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-            <h2>Heading</h2>
-            <p>Information on the game</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-3 text-center">
+            <img class="" src="img/svg/PlayStation_4.svg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h4>Playstation</h4>
           </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="img/svg/nintendo.svg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-            <h2>Heading</h2>
-            <p>Information on the game</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-lg-3 text-center">
+            <img class="" src="img/svg/nintendo.svg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h4>Nintendo</h4>
           </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="img/svg/xbox%20symbol.svg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-            <h2>Heading</h2>
-            <p>Information on the game</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-lg-3 text-center">
+            <img class="" src="img/svg/xbox%20symbol.svg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h4>Xbox</h4>
           </div><!-- /.col-lg-4 -->
+          <div class="col-lg-1"></div>
         </div><!-- /.row -->
 
 
 
+
+        <div class="text-left" style="padding-top: 25px;">
+          <h4>Recommended for you</h4>
+        </div>
 
         <div id="demo" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#demo" data-slide-to="0" class="active"></li>
             <li data-target="#demo" data-slide-to="1"></li>
             <li data-target="#demo" data-slide-to="2"></li>
-          </ol>
+          </ol><!-- Carousel-indicators end -->
 
           <!-- recommended carousel start -->
           <div class="carousel-inner">
+            <!-- Slide 1 -->
             <div class="carousel-item active"  href="#">
               <div class="row">
                 <div class="col-md-2"></div><!-- empty div to force content center -->
-                <div class="col-md-4">
-                  <div class="thumbnail">
-                    <img src="img/gameImg/FarCry5.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
-                    <div class="caption">
-                      <h3>Header Name</h3>
-                      <p>Description</p>
-                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
-                      </p>
-                    </div><!-- caption end -->
-                  </div><!-- thumbnail end -->
+                <div class="col-md-4" style="padding-right: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/FarCry5.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                      <div class="caption">
+                        <h3>Header Name</h3>
+                        <p>Description</p>
+                        <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
                 </div><!-- col-md-4 end -->
 
-                <div class="col-md-4">
-                  <div class="thumbnail">
-                    <img src="img/gameImg/WolfensteinTheOldBlood.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
-                    <div class="caption">
-                      <h3>Header Name</h3>
-                      <p>Description</p>
-                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
-                      </p>
-                    </div><!-- caption end -->
-                  </div><!-- thumbnail end -->
+                <div class="col-md-4" style="padding-left: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/WolfensteinTheOldBlood.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                      <div class="caption">
+                        <h3>Header Name</h3>
+                        <p>Description</p>
+                        <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
                 </div><!-- col-md-4 end -->
                 <div class="col-md-2"></div><!-- empty div to force content center -->
-              </div> <!-- row end -->
+              </div><!-- row end -->
             </div><!-- carousel item end -->
 
+            <!-- Slide 2 -->
             <div class="carousel-item" href="#">
               <div class="row">
                 <div class="col-md-2"></div><!-- empty div to force content center -->
-                <div class="col-md-4">
-                  <div class="thumbnail">
-                    <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
-                    <div class="caption">
-                      <h3>Header Name</h3>
-                      <p>Description</p>
-                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
-                      </p>
-                    </div><!-- caption end -->
-                  </div><!-- thumbnail end -->
+                <div class="col-md-4" style="padding-right: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/MetroExodus.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                      <div class="caption">
+                        <h3>Header Name</h3>
+                        <p>Description</p>
+                        <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
                 </div><!-- col-md-4 end -->
 
-                <div class="col-md-4">
-                  <div class="thumbnail">
-                    <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
-                    <div class="caption">
-                      <h3>Header Name</h3>
-                      <p>Description</p>
-                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
-                      </p>
-                    </div><!-- caption end -->
-                  </div><!-- thumbnail end -->
+                <div class="col-md-4" style="padding-left: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/Prey.png" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                      <div class="caption">
+                        <h3>Header Name</h3>
+                        <p>Description</p>
+                        <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
                 </div><!-- col-md-4 end -->
                 <div class="col-md-2"></div><!-- empty div to force content center -->
-              </div> <!-- row end -->
-            </div>
+              </div><!-- row end -->
+            </div><!-- carousel item end -->
 
+            <!-- Slide 3 -->
             <div class="carousel-item" href="#">
               <div class="row">
                 <div class="col-md-2"></div><!-- empty div to force content center -->
-                <div class="col-md-4">
-                  <div class="thumbnail">
-                    <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
-                    <div class="caption">
-                      <h3>Header Name</h3>
-                      <p>Description</p>
-                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
-                      </p>
-                    </div><!-- caption end -->
-                  </div><!-- thumbnail end -->
+                <div class="col-md-4" style="padding-right: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/FarcryNewDawn.jpg" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                      <div class="caption">
+                        <h3>Header Name</h3>
+                        <p>Description</p>
+                        <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
                 </div><!-- col-md-4 end -->
 
-                <div class="col-md-4">
-                  <div class="thumbnail">
-                    <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
-                    <div class="caption">
-                      <h3>Header Name</h3>
-                      <p>Description</p>
-                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
-                      </p>
-                    </div><!-- caption end -->
-                  </div><!-- thumbnail end -->
+                <div class="col-md-4" style="padding-left: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/WolfensteinTheNewOrder.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                      <div class="caption">
+                        <h3>Header Name</h3>
+                        <p>Description</p>
+                        <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
                 </div><!-- col-md-4 end -->
                 <div class="col-md-2"></div><!-- empty div to force content center -->
-              </div> <!-- row end -->
-            </div>
-
-          </div>
+              </div><!-- row end -->
+            </div><!-- carousel item end -->
 
 
           <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
@@ -174,7 +181,7 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
+        </div><!-- carousel-slider end -->
 
 
 
