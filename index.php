@@ -62,6 +62,127 @@
         </div><!-- /.row -->
 
 
+
+
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ol>
+
+          <!-- recommended carousel start -->
+          <div class="carousel-inner">
+            <div class="carousel-item active"  href="#">
+              <div class="row">
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="img/gameImg/FarCry5.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                    <div class="caption">
+                      <h3>Header Name</h3>
+                      <p>Description</p>
+                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
+                      </p>
+                    </div><!-- caption end -->
+                  </div><!-- thumbnail end -->
+                </div><!-- col-md-4 end -->
+
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="img/gameImg/WolfensteinTheOldBlood.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                    <div class="caption">
+                      <h3>Header Name</h3>
+                      <p>Description</p>
+                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
+                      </p>
+                    </div><!-- caption end -->
+                  </div><!-- thumbnail end -->
+                </div><!-- col-md-4 end -->
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+              </div> <!-- row end -->
+            </div><!-- carousel item end -->
+
+            <div class="carousel-item" href="#">
+              <div class="row">
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                    <div class="caption">
+                      <h3>Header Name</h3>
+                      <p>Description</p>
+                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
+                      </p>
+                    </div><!-- caption end -->
+                  </div><!-- thumbnail end -->
+                </div><!-- col-md-4 end -->
+
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                    <div class="caption">
+                      <h3>Header Name</h3>
+                      <p>Description</p>
+                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
+                      </p>
+                    </div><!-- caption end -->
+                  </div><!-- thumbnail end -->
+                </div><!-- col-md-4 end -->
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+              </div> <!-- row end -->
+            </div>
+
+            <div class="carousel-item" href="#">
+              <div class="row">
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                    <div class="caption">
+                      <h3>Header Name</h3>
+                      <p>Description</p>
+                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
+                      </p>
+                    </div><!-- caption end -->
+                  </div><!-- thumbnail end -->
+                </div><!-- col-md-4 end -->
+
+                <div class="col-md-4">
+                  <div class="thumbnail">
+                    <img src="http://placehold.it/320x200" alt="ALT NAME" class="img-responsive" />
+                    <div class="caption">
+                      <h3>Header Name</h3>
+                      <p>Description</p>
+                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a>
+                      </p>
+                    </div><!-- caption end -->
+                  </div><!-- thumbnail end -->
+                </div><!-- col-md-4 end -->
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+              </div> <!-- row end -->
+            </div>
+
+          </div>
+
+
+          <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+
+
+
+
+
+
+
         <!-- Start of the individual identities -->
 
         <hr class="featurette-divider">

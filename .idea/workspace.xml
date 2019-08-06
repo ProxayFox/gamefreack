@@ -2,8 +2,417 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Da_AyDOn_MelLooPy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gamefreack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gamefreack.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/add-control-interface-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/add-game-console-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/cancel-game-control-interface-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/cooperative-game.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/delete-console-of-games-interface-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/disc-black-circular-shape.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/download-game-interface-symbol-of-control-with-an-arrow.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/dreamcast-control-for-games.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/four-player-game-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/four-ps-games-controls.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/game-control-for-one-person-interface-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/game-control-super-nintendo.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/game-control-tool-with-full-battery-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/game-control-tool.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/game-control-with-full-battery.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/game-control-with-half-battery-charged.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/game-control-with-no-battery.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/game-control-without-batteries.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/game-disk.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/game-mini-disc.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/game.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/gameboy-advanced-game.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/gameboy-tool.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/gameboy.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/gamecube-console-box.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/games-console.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/games-control-tool.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/games-control-with-low-battery.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/games-control-with-no-batteries-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/games-controller-with-full-battery.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/gane-control-with-medium-battery-status.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/genesis-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/headset.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/joystick-game-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/medium-battery-status-symbol-of-games-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/monitor-keyboard-and-mouse.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/n64-game-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/nintendo-64-console.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/nintendo-game-1.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/nintendo-game-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/nintendo-game-tool.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/nintendo-game.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/nintendo-gamecube-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/nintendo-games-console.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/nintendo-wii-control-for-games.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/one-player-game-symbol-1.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/one-player-game-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/online-games-interface-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/online-games-symbol-of-a-monitor-and-a-game-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/plus-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/ps-3-games-control-with-low-battery-status.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/ps-logo-of-games.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/ps3-wireless-game-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/ps4-control-of-games.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/ps4-game-console.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/ps4-game-control-with-medium-battery.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/ps4-game-control-with-no-battery.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/ps4-low-battery-status-symbol-of-game-control-interface.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/ps4-wireless-game-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/racing-controller.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/rest-game-control-interface-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/shooting-game-target.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/sony-ps-games-buttons.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/super-nintendo-game-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/three-players-game-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/three-ps-controls-for-games.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/two-players-game-interface-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/versus-game.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/vibration-game-control-black-tool-shape.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wifi-wireless-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-control-for-games.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-full-battery-status-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-game-control-with-low-battery-status.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-game-control-with-low-battery.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-game-control-with-medium-battery-status.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-game-control-with-no-battery.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-games-control-tool.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-games-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-logo.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-u-control-for-games.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-u-full-battery-games-control-symbol.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-u-games-tool.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-u-logo.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/wii-u-wireless-game-control-tool.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-360-console-of-games.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-360-control-game-tool.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-360-wireless-game-control-tool.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-buttons-set.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-buttons.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-console-tool.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-console.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-control-for-one.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-digital-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-games-control-with-medium-battery-status.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-logo.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-one-full-battery-games-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-one-game-control-with-low-battery-status.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-one-games-console.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-one-wireless-control.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/eps/xbox-one-with-no-battery.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/font/Flaticon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/font/Flaticon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/font/Flaticon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/font/Flaticon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/font/_flaticon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/font/flaticon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/font/flaticon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/license/license.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/add-control-interface-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/add-game-console-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/cancel-game-control-interface-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/cooperative-game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/delete-console-of-games-interface-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/disc-black-circular-shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/download-game-interface-symbol-of-control-with-an-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/dreamcast-control-for-games.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/four-player-game-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/four-ps-games-controls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/game-control-for-one-person-interface-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/game-control-super-nintendo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/game-control-tool-with-full-battery-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/game-control-tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/game-control-with-full-battery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/game-control-with-half-battery-charged.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/game-control-with-no-battery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/game-control-without-batteries.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/game-disk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/game-mini-disc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/gameboy-advanced-game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/gameboy-tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/gameboy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/gamecube-console-box.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/games-console.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/games-control-tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/games-control-with-low-battery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/games-control-with-no-batteries-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/games-controller-with-full-battery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/gane-control-with-medium-battery-status.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/genesis-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/headset.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/joystick-game-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/medium-battery-status-symbol-of-games-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/monitor-keyboard-and-mouse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/n64-game-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/nintendo-64-console.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/nintendo-game-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/nintendo-game-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/nintendo-game-tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/nintendo-game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/nintendo-gamecube-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/nintendo-games-console.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/nintendo-wii-control-for-games.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/one-player-game-symbol-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/one-player-game-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/online-games-interface-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/online-games-symbol-of-a-monitor-and-a-game-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/plus-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/ps-3-games-control-with-low-battery-status.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/ps-logo-of-games.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/ps3-wireless-game-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/ps4-control-of-games.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/ps4-game-console.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/ps4-game-control-with-medium-battery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/ps4-game-control-with-no-battery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/ps4-low-battery-status-symbol-of-game-control-interface.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/ps4-wireless-game-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/racing-controller.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/rest-game-control-interface-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/shooting-game-target.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/sony-ps-games-buttons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/super-nintendo-game-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/three-players-game-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/three-ps-controls-for-games.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/two-players-game-interface-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/versus-game.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/vibration-game-control-black-tool-shape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wifi-wireless-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-control-for-games.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-full-battery-status-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-game-control-with-low-battery-status.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-game-control-with-low-battery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-game-control-with-medium-battery-status.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-game-control-with-no-battery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-games-control-tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-games-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-u-control-for-games.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-u-full-battery-games-control-symbol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-u-games-tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-u-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/wii-u-wireless-game-control-tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-360-console-of-games.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-360-control-game-tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-360-wireless-game-control-tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-buttons-set.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-buttons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-console-tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-console.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-control-for-one.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-digital-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-games-control-with-medium-battery-status.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-one-full-battery-games-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-one-game-control-with-low-battery-status.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-one-games-console.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-one-wireless-control.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/png/xbox-one-with-no-battery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/add-control-interface-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/add-game-console-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/cancel-game-control-interface-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/cooperative-game.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/delete-console-of-games-interface-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/disc-black-circular-shape.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/download-game-interface-symbol-of-control-with-an-arrow.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/dreamcast-control-for-games.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/four-player-game-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/four-ps-games-controls.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/game-control-for-one-person-interface-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/game-control-super-nintendo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/game-control-tool-with-full-battery-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/game-control-tool.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/game-control-with-full-battery.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/game-control-with-half-battery-charged.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/game-control-with-no-battery.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/game-control-without-batteries.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/game-disk.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/game-mini-disc.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/game.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/gameboy-advanced-game.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/gameboy-tool.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/gameboy.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/gamecube-console-box.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/games-console.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/games-control-tool.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/games-control-with-low-battery.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/games-control-with-no-batteries-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/games-controller-with-full-battery.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/gane-control-with-medium-battery-status.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/genesis-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/headset.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/joystick-game-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/medium-battery-status-symbol-of-games-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/monitor-keyboard-and-mouse.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/n64-game-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/nintendo-64-console.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/nintendo-game-1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/nintendo-game-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/nintendo-game-tool.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/nintendo-game.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/nintendo-gamecube-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/nintendo-games-console.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/nintendo-wii-control-for-games.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/one-player-game-symbol-1.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/one-player-game-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/online-games-interface-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/online-games-symbol-of-a-monitor-and-a-game-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/plus-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/ps-3-games-control-with-low-battery-status.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/ps-logo-of-games.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/ps3-wireless-game-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/ps4-control-of-games.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/ps4-game-console.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/ps4-game-control-with-medium-battery.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/ps4-game-control-with-no-battery.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/ps4-low-battery-status-symbol-of-game-control-interface.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/ps4-wireless-game-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/racing-controller.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/rest-game-control-interface-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/shooting-game-target.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/sony-ps-games-buttons.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/super-nintendo-game-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/three-players-game-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/three-ps-controls-for-games.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/two-players-game-interface-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/versus-game.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/vibration-game-control-black-tool-shape.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wifi-wireless-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-control-for-games.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-full-battery-status-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-game-control-with-low-battery-status.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-game-control-with-low-battery.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-game-control-with-medium-battery-status.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-game-control-with-no-battery.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-games-control-tool.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-games-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-logo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-u-control-for-games.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-u-full-battery-games-control-symbol.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-u-games-tool.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-u-logo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/wii-u-wireless-game-control-tool.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-360-console-of-games.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-360-control-game-tool.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-360-wireless-game-control-tool.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-buttons-set.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-buttons.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-console-tool.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-console.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-control-for-one.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-digital-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-games-control-with-medium-battery-status.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-logo.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-one-full-battery-games-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-one-game-control-with-low-battery-status.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-one-games-console.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-one-wireless-control.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/psd/xbox-one-with-no-battery.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/add-control-interface-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/add-game-console-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/cancel-game-control-interface-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/cooperative-game.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/delete-console-of-games-interface-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/disc-black-circular-shape.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/download-game-interface-symbol-of-control-with-an-arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/dreamcast-control-for-games.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/four-player-game-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/four-ps-games-controls.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/game-control-for-one-person-interface-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/game-control-super-nintendo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/game-control-tool-with-full-battery-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/game-control-tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/game-control-with-full-battery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/game-control-with-half-battery-charged.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/game-control-with-no-battery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/game-control-without-batteries.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/game-disk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/game-mini-disc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/game.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/gameboy-advanced-game.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/gameboy-tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/gameboy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/gamecube-console-box.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/games-console.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/games-control-tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/games-control-with-low-battery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/games-control-with-no-batteries-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/games-controller-with-full-battery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/gane-control-with-medium-battery-status.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/genesis-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/headset.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/joystick-game-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/medium-battery-status-symbol-of-games-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/monitor-keyboard-and-mouse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/n64-game-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/nintendo-64-console.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/nintendo-game-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/nintendo-game-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/nintendo-game-tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/nintendo-game.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/nintendo-gamecube-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/nintendo-games-console.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/nintendo-wii-control-for-games.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/one-player-game-symbol-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/one-player-game-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/online-games-interface-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/online-games-symbol-of-a-monitor-and-a-game-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/plus-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/ps-3-games-control-with-low-battery-status.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/ps-logo-of-games.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/ps3-wireless-game-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/ps4-control-of-games.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/ps4-game-console.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/ps4-game-control-with-medium-battery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/ps4-game-control-with-no-battery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/ps4-low-battery-status-symbol-of-game-control-interface.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/ps4-wireless-game-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/racing-controller.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/rest-game-control-interface-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/shooting-game-target.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/sony-ps-games-buttons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/super-nintendo-game-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/three-players-game-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/three-ps-controls-for-games.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/two-players-game-interface-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/versus-game.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/vibration-game-control-black-tool-shape.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wifi-wireless-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-control-for-games.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-full-battery-status-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-game-control-with-low-battery-status.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-game-control-with-low-battery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-game-control-with-medium-battery-status.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-game-control-with-no-battery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-games-control-tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-games-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-u-control-for-games.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-u-full-battery-games-control-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-u-games-tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-u-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/wii-u-wireless-game-control-tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-360-console-of-games.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-360-control-game-tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-360-wireless-game-control-tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-buttons-set.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-buttons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-console-tool.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-console.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-control-for-one.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-digital-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-games-control-with-medium-battery-status.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-one-full-battery-games-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-one-game-control-with-low-battery-status.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-one-games-console.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-one-wireless-control.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/svg_layout/svg/xbox-one-with-no-battery.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,20 +445,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="58" column="42" lean-forward="true" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+            <state relative-caret-position="529">
+              <caret line="92" column="130" selection-start-line="92" selection-start-column="130" selection-end-line="92" selection-end-column="130" />
               <folding>
-                <element signature="n#style#0;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="e#2288#2295#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="e#2878#2885#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="e#3492#3499#0#HTML" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#div#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#1;n#div#3;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#main#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,7 +491,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -108,6 +507,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,18 +549,20 @@
       <workItem from="1564441846228" duration="3217000" />
       <workItem from="1564615315101" duration="664000" />
       <workItem from="1564631528374" duration="2403000" />
-      <workItem from="1564970695191" duration="4105000" />
+      <workItem from="1564970695191" duration="4237000" />
+      <workItem from="1564980071766" duration="246000" />
+      <workItem from="1565045859172" duration="3957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11626000" />
+    <option name="totallyTimeSpent" value="15961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1337953" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1359275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -173,7 +575,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32998884" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33890748" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33779263" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -287,20 +689,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="58" column="42" lean-forward="true" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+        <state relative-caret-position="529">
+          <caret line="92" column="130" selection-start-line="92" selection-start-column="130" selection-end-line="92" selection-end-column="130" />
           <folding>
-            <element signature="n#style#0;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="e#2288#2295#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="e#2878#2885#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="e#3492#3499#0#HTML" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#div#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#3;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#main#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
