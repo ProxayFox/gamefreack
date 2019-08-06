@@ -11,7 +11,10 @@
 
     <script>
       $(document).ready(function(
-
+          $('#playStationBTN').click(function(){
+            window.location.href='index.php';
+            console.log("playstation clicked")
+          })
       ))
     </script>
 
@@ -46,12 +49,11 @@
 
   <!-- Marketing messaging and features -->
   <div class="container marketing" style="padding-top: 10px;">
-
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-3"></div>
       <div class="col-lg-2 text-center">
-        <div class="icon">
+        <div class="icon" onclick="window.location.href='index.php';">
           <svg class="col-lg-12">
             <?php include_once("img/svg/PlayStation_4.svg") ?>
           </svg>
@@ -59,7 +61,7 @@
         </div>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-2 text-center">
-        <div class="icon">
+        <div class="icon" onclick="window.location.href='index.php';">
           <svg class="col-lg-12">
             <?php include_once("img/svg/nintendo.svg") ?>
           </svg>
@@ -67,7 +69,7 @@
         </div>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-2 text-center">
-        <div class="icon">
+        <div class="icon" onclick="window.location.href='index.php';">
           <svg class="col-lg-12">
             <?php include_once("img/svg/xboxSymbol.svg") ?>
           </svg>
@@ -202,72 +204,8 @@
           <span class="sr-only">Next</span>
         </a>
       </div><!-- carousel-slider end -->
-
-
-      <!-- Start of the individual identities -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span>
-          </h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto"
-               src="img/Flat%20Gradient%20Social%20Media%20Icons/80/500px%20icon.png" alt="Generic placeholder image"
-               style="height: 250px; width: 250px;">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto"
-               src="img/Flat%20Gradient%20Social%20Media%20Icons/80/500px%20icon.png" alt="Generic placeholder image"
-               style="height: 250px; width: 250px;">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto"
-               src="img/Flat%20Gradient%20Social%20Media%20Icons/80/500px%20icon.png" alt="Generic placeholder image"
-               style="height: 250px; width: 250px;">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-    </div><!-- /.container -->
-
-
-    <!-- FOOTER -->
-    <footer class="container">
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
-  </div>
+    </div><!-- container -->
+  </div><!-- container marketing end -->
 </main>
 
 <?php
