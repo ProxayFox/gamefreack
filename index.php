@@ -51,7 +51,7 @@
     <div class="row">
       <div class="col-lg-3"></div>
       <div class="col-lg-2 text-center">
-        <div class="icon" onclick="window.location.href='index.php';">
+        <div class="icon" onclick="window.location.href='PS4.php';">
           <svg class="col-lg-12">
             <?php include_once("img/indexSVG/PlayStation_4.svg") ?>
           </svg>
@@ -59,7 +59,7 @@
         </div>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-2 text-center">
-        <div class="icon" onclick="window.location.href='index.php';">
+        <div class="icon" onclick="window.location.href='nintendo.php';">
           <svg class="col-lg-12">
             <?php include_once("img/indexSVG/nintendo.svg") ?>
           </svg>
@@ -67,7 +67,7 @@
         </div>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-2 text-center">
-        <div class="icon" onclick="window.location.href='index.php';">
+        <div class="icon" onclick="window.location.href='xbox.php';">
           <svg class="col-lg-12">
             <?php include_once("img/indexSVG/xboxSymbol.svg") ?>
           </svg>
