@@ -9,15 +9,6 @@
       }
     </style>
 
-    <script>
-      $(document).ready(function(
-          $('#playStationBTN').click(function(){
-            window.location.href='index.php';
-            console.log("playstation clicked")
-          })
-      ))
-    </script>
-
 
 
 
@@ -62,7 +53,7 @@
       <div class="col-lg-2 text-center">
         <div class="icon" onclick="window.location.href='index.php';">
           <svg class="col-lg-12">
-            <?php include_once("img/svg/PlayStation_4.svg") ?>
+            <?php include_once("img/indexSVG/PlayStation_4.svg") ?>
           </svg>
           <h4>Playstation</h4>
         </div>
@@ -70,7 +61,7 @@
       <div class="col-lg-2 text-center">
         <div class="icon" onclick="window.location.href='index.php';">
           <svg class="col-lg-12">
-            <?php include_once("img/svg/nintendo.svg") ?>
+            <?php include_once("img/indexSVG/nintendo.svg") ?>
           </svg>
           <h4>Nintendo</h4>
         </div>
@@ -78,7 +69,7 @@
       <div class="col-lg-2 text-center">
         <div class="icon" onclick="window.location.href='index.php';">
           <svg class="col-lg-12">
-            <?php include_once("img/svg/xboxSymbol.svg") ?>
+            <?php include_once("img/indexSVG/xboxSymbol.svg") ?>
           </svg>
           <h4>Xbox</h4>
         </div>
