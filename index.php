@@ -13,7 +13,7 @@
 
 
 
-<main role="main" style="padding-top: 83px; background-color: #d2d6dc;">
+<main role="main" style="padding-top: 83px; background-color: #c6c6c6;">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -49,7 +49,7 @@
   <div class="container marketing" style="padding-top: 10px;">
     <!-- Three columns of text below the carousel -->
     <div class="row">
-      <div class="col-lg-3"></div>
+      <div class="col-lg-2"></div>
       <div class="col-lg-2 text-center">
         <div class="icon" onclick="window.location.href='PS4.php';">
           <svg class="col-lg-12">
@@ -57,7 +57,7 @@
           </svg>
           <h4>Playstation</h4>
         </div>
-      </div><!-- /.col-lg-4 -->
+      </div><!-- /.col-lg-2 -->
       <div class="col-lg-2 text-center">
         <div class="icon" onclick="window.location.href='nintendo.php';">
           <svg class="col-lg-12">
@@ -65,7 +65,7 @@
           </svg>
           <h4>Nintendo</h4>
         </div>
-      </div><!-- /.col-lg-4 -->
+      </div><!-- /.col-lg-2 -->
       <div class="col-lg-2 text-center">
         <div class="icon" onclick="window.location.href='xbox.php';">
           <svg class="col-lg-12">
@@ -73,8 +73,16 @@
           </svg>
           <h4>Xbox</h4>
         </div>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-3"></div>
+      </div><!-- /.col-lg-2 -->
+      <div class="col-lg-2 text-center">
+        <div class="icon" onclick="window.location.href='PC.php';">
+          <svg class="col-lg-12">
+            <?php include_once("img/indexSVG/PCSymbol.svg") ?>
+          </svg>
+          <h4>Personal Computer</h4>
+        </div>
+      </div><!-- /.col-lg-2 -->
+      <div class="col-lg-2"></div>
     </div><!-- /.row -->
 
 
@@ -100,7 +108,7 @@
           <div class="row">
             <div class="col-md-2"></div><!-- empty div to force content center -->
             <div class="col-md-4" style="padding-right: 5px;">
-              <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                 <div class="thumbnail" style="padding: 25px;">
                   <img src="img/gameImg/FarCry5.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
                   <div class="caption">
@@ -113,7 +121,7 @@
             </div><!-- col-md-4 end -->
 
             <div class="col-md-4" style="padding-left: 5px;">
-              <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                 <div class="thumbnail" style="padding: 25px;">
                   <img src="img/gameImg/WolfensteinTheOldBlood.webp" alt="ALT NAME" class="img-responsive"
                        style="width: 320px;"/>
@@ -134,7 +142,7 @@
           <div class="row">
             <div class="col-md-2"></div><!-- empty div to force content center -->
             <div class="col-md-4" style="padding-right: 5px;">
-              <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                 <div class="thumbnail" style="padding: 25px;">
                   <img src="img/gameImg/MetroExodus.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
                   <div class="caption">
@@ -147,7 +155,7 @@
             </div><!-- col-md-4 end -->
 
             <div class="col-md-4" style="padding-left: 5px;">
-              <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                 <div class="thumbnail" style="padding: 25px;">
                   <img src="img/gameImg/Prey.png" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
                   <div class="caption">
@@ -167,7 +175,7 @@
           <div class="row">
             <div class="col-md-2"></div><!-- empty div to force content center -->
             <div class="col-md-4" style="padding-right: 5px;">
-              <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                 <div class="thumbnail" style="padding: 25px;">
                   <img src="img/gameImg/FarcryNewDawn.jpg" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
                   <div class="caption">
@@ -180,7 +188,7 @@
             </div><!-- col-md-4 end -->
 
             <div class="col-md-4" style="padding-left: 5px;">
-              <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                 <div class="thumbnail" style="padding: 25px;">
                   <img src="img/gameImg/WolfensteinTheNewOrder.webp" alt="ALT NAME" class="img-responsive"
                        style="width: 320px;"/>
@@ -231,7 +239,7 @@
         <div class="row">
           <div class="col-md-2"></div><!-- empty div to force content center -->
           <div class="col-md-4" style="padding-right: 5px;">
-            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
               <div class="thumbnail" style="padding: 25px;">
                 <img src="img/consoleimg/XBOXOneSBlackIMG1.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
                 <div class="caption">
@@ -244,7 +252,7 @@
           </div><!-- col-md-4 end -->
 
           <div class="col-md-4" style="padding-left: 5px;">
-            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
               <div class="thumbnail" style="padding: 25px;">
                 <img src="img/consoleimg/XBOXOneSWhiteIMG1.jpg" alt="ALT NAME" class="img-responsive"
                      style="width: 320px;"/>
@@ -265,7 +273,7 @@
         <div class="row">
           <div class="col-md-2"></div><!-- empty div to force content center -->
           <div class="col-md-4" style="padding-right: 5px;">
-            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
               <div class="thumbnail" style="padding: 25px;">
                 <img src="img/consoleimg/NintendoSwitchBlack.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
                 <div class="caption">
@@ -278,7 +286,7 @@
           </div><!-- col-md-4 end -->
 
           <div class="col-md-4" style="padding-left: 5px;">
-            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
               <div class="thumbnail" style="padding: 25px;">
                 <img src="img/consoleimg/NintendoSwitchRed.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
                 <div class="caption">
@@ -298,7 +306,7 @@
         <div class="row">
           <div class="col-md-2"></div><!-- empty div to force content center -->
           <div class="col-md-4" style="padding-right: 5px;">
-            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
               <div class="thumbnail" style="padding: 25px;">
                 <img src="img/consoleimg/PS4BlackIMG1.jpg" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
                 <div class="caption">
@@ -311,7 +319,7 @@
           </div><!-- col-md-4 end -->
 
           <div class="col-md-4" style="padding-left: 5px;">
-            <div class="border border-dark rounded" style="background-color: #e5e5e5;">
+            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
               <div class="thumbnail" style="padding: 25px;">
                 <img src="img/consoleimg/PS4WhiteIMG1.webp" alt="ALT NAME" class="img-responsive"
                      style="width: 320px;"/>
