@@ -20,10 +20,13 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- Colour palate -->
   <!-- https://www.color-hex.com/color-palette/191 -->
-
-
 </head>
 <body>
+<style>
+  .hidden {
+    display: none !important;
+  }
+</style>
 <?php
   if (array_key_exists("user", $_SESSION)) {
     require_once("./layouts/accountOrNot/userHead.php");

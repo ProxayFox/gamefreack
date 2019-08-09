@@ -21,7 +21,7 @@
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
       <div class="container">
-        <a class="navbar-brand" href="index.php" style="text-transform: uppercase;"> LACODEID.COM</a>
+        <a class="navbar-brand" href="index.php" style="text-transform: uppercase;"> gamefreack.COM</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,31 +36,111 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="PS4.php">Playstation 4</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Fruits</a>
+              <a class="nav-link" href="xbox.php">Xbox One</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Sea food</a>
+              <a class="nav-link" href="nintendo.php">Nintendo Switch</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Vegetables</a>
+              <a class="nav-link" href="PC.php">PC Gaming</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="loot.php">Loot</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Login</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Lets Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Sign in -->
+          <form id="signIn" class="" class="login-form" action="./mydb/login/login.test.db.php" method="POST" role="form">
+            <label for="inputEmail" class="sr-only">Enter: Email address</label>
+            <input type="text" id="userName" class="form-control" placeholder="Username" required autofocus>
+            <label for="inputPassword" class="sr-only">Enter: Password</label>
+            <input type="password" id="password" class="form-control" placeholder="Password" required>
+            <button class="btn btn-primary btn-lg btn-block" type="submit" style="margin-top: 5px;">Sign In</button>
+          </form><!-- Sign in end -->
+
+          <!-- Sign up -->
+            <form id="signUp" class="login-form hidden" action="./mydb/register/register.db.php" method="POST" role="form">
+              <label for="inputEmail" class="sr-only">Enter New: Username</label>
+              <input type="text" id="uname" name="uname" class="form-control" placeholder="Username" required autofocus>
+              <label for="inputEmail" class="sr-only">Enter New: Email</label>
+              <input type="text" id="email" name="email" class="form-control" placeholder="Email" required autofocus>
+              <label for="inputPassword" class="sr-only">Enter New: Password</label>
+              <input type="password" id="password" name="PWD" class="form-control" placeholder="Password" required>
+              <button class="btn btn-primary btn-lg btn-block" type="submit" style="margin-top: 5px;">Sign Up</button>
+            </form><!-- Sign up End -->
+
+          <!-- Buttons to swap from sign in to sign up -->
+          <div class="text-center">
+            <button onclick="btn('signIn')" id="btnSignIn" class="btn text-center hidden" style="margin-top: 5px; text-align: center;">Sign In</button>
+            <button onclick="btn('signUp')" id="btnSignUp" class="btn text-center" style="margin-top: 5px; text-align: center;">Sign Up</button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous">
+</script>
+<script>
+
+  //Script to pick sign up form or sign in form
+  function btn(formChange) {
+    const signIn = $("#signIn");
+    const signUp = $("#signUp");
+    const btnSignIn = $("#btnSignIn");
+    const btnSignUp = $("#btnSignUp");
+
+    if (formChange === 'signIn') {
+      // $("#btnSignIn").fadeOut("slow");
+      // $("#signIn").fadeOut("slow");
+      // $("#btnSignUp").fadeIn("slow");
+      // $("#signUp").fadeIn("slow");
+      signIn.removeClass("hidden");
+      btnSignUp.removeClass("hidden");
+      signUp.addClass("hidden");
+      btnSignIn.addClass("hidden");
+      console.log("sign in shown")
+    } else if(formChange === "signUp") {
+      // let playbackOption = {queue:false, duration:"slow"};
+      // $("#btnSignUp").fadeOut(playbackOption);
+      // $("#signUp").fadeOut(playbackOption);
+      // $("#btnSignIn").fadeIn(playbackOption);
+      // $("#signIn").fadeIn(playbackOption);
+      signIn.addClass("hidden");
+      btnSignUp.addClass("hidden");
+      signUp.removeClass("hidden");
+      btnSignIn.removeClass("hidden");
+      console.log("sign up shown")
+    } else {
+      throw("Function btn: No match found");
+    }
+  }
+</script>
