@@ -2,7 +2,7 @@
 require_once("./layouts/header.php");
 ?>
 
-  <main>
+  <main role="main" style="padding-top: 83px; background-color: #c6c6c6;">
     <header style="padding-top: 83px;">
       <img class="w-100" src="img/consoleBanner/PCIMG2.jpg" alt="Banner for Personal Computer">
     </header>
