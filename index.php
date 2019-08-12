@@ -2,12 +2,12 @@
   require_once("./layouts/header.php");
 ?>
 
-    <style>
-      .icon:hover {
-        fill:#3ca7d0;
-        color:#3ca7d0;
-      }
-    </style>
+<style>
+  .icon:hover {
+    fill:#3ca7d0;
+    color:#3ca7d0;
+  }
+</style>
 
 
 
@@ -15,11 +15,6 @@
 
 <main role="main" style="padding-top: 83px; background-color: #c6c6c6;">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
     <div class="carousel-inner">
       <a class="carousel-item active" href="#">
         <img class="d-block w-100" src="img/index/HH_20190726_WeeklyDeal.jpg" alt="First slide" id="slide1">
@@ -95,12 +90,6 @@
     </div>
 
     <div id="Game" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#Game" data-slide-to="0" class="active"></li>
-        <li data-target="#Game" data-slide-to="1"></li>
-        <li data-target="#Game" data-slide-to="2"></li>
-      </ol><!-- Carousel-indicators end -->
-
       <!-- recommended carousel start -->
       <div class="carousel-inner">
         <!-- Slide 1 -->
@@ -226,12 +215,6 @@
   </div>
 
   <div id="Consoles" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#Consoles" data-slide-to="0" class="active"></li>
-      <li data-target="#Consoles" data-slide-to="1"></li>
-      <li data-target="#Consoles" data-slide-to="2"></li>
-    </ol><!-- Carousel-indicators end -->
-
     <!-- recommended carousel start -->
     <div class="carousel-inner">
       <!-- Slide 1 -->
