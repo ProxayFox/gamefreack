@@ -143,14 +143,14 @@ INSERT INTO clientProfile (`CPID`, `CDID`, `displayName`, `UIMG`) VALUES
   (3, 3, 'Morgs', '44fdc40.jpg');
 
 INSERT INTO clientReward (`CRID`, `CDID`, `points`, `level`) VALUES
-  (1, 1, NULL, NULL),
-  (2, 2, NULL, NULL),
-  (3, 3, NULL, NULL);
+  (1, 1, 10, 1),
+  (2, 2, 5, 2),
+  (3, 3, 1, 1);
 
 INSERT INTO clientAddress (CAID, CDID, unit, buildingNumber, street, suburb, city, state, postNo) VALUES
-  (1, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-  (2, 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-  (3, 3, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+  (1, 1, 10, 7, 'Boundary st', 'Brisbane', 'Brisbane', 'QLD', 4000),
+  (2, 2, NULL, 183, 'Beddoes st', 'Holland pk', 'Brisbane', 'QLD', 4121),
+  (3, 3, NULL, 7, 'Boundary st', 'Holland pk', 'Brisbane', 'QLD', 4121);
 
 INSERT INTO login (`LID`, `CDID`, `UName`, `PWD`) VALUES
   (1, 1, 'atcav', 'e6c83b282aeb2e022844595721cc00bbda47cb24537c1779f9bb84f04039e1676e6ba8573e588da1052510e3aa0a32a9e55879ae22b0c2d62136fc0a3e85f8bb'),
@@ -249,7 +249,7 @@ INSERT INTO consoleInventoryIMG (CIID, IMG) VALUE
   (5, 'XBOXOneSBlack.jpg'),
   (5, 'XBOXOneSBlackIMG1.jpg'),
   (6, 'XBOXOneSWhite.jpg'),
-  (6, 'XBOXOneSWhiteIMG1.jpg'),
+  (6, 'XBOXOneSWhiteIMG1.jpg');
 
 
 INSERT INTO savedConsoleInventory (CDID, CIID) VALUES

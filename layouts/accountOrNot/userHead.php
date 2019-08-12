@@ -1,4 +1,17 @@
 <link rel="stylesheet" href="./css/userHeader.css">
+
+<script>
+  $(document).ready(function() {
+    $('[data-toggle="popover"]').popover();
+    console.log("ready");
+
+    $("#postUpdate").click(function () {
+      window.location.href = "mydb/login/logout.db.php";
+      console.log('logged out');
+    }
+  });
+</script>
+
 <section>
   <!-- Navigation -->
   <div class="fixed-top">
@@ -40,11 +53,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">login</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="mydb/login/logout.db.php">Logout</a>
             </li>
           </ul>
         </div>

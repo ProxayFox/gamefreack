@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Da_AyDOn_MelLooPy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Da_AyDOn_MelLooPy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC.php" beforeDir="false" afterPath="$PROJECT_DIR$/PC.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SQL/SQL.SQL" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.SQL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nintendo.php" beforeDir="false" afterPath="$PROJECT_DIR$/nintendo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/xbox.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/accountOrNot/guestHead.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/accountOrNot/guestHead.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/accountOrNot/userHead.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/accountOrNot/userHead.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/login/login.test.db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/login/logout.db.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/login/logout.db.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +34,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="gamefreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
@@ -42,6 +60,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -65,6 +84,26 @@
           <option name="name" value="StatusDashboardGroupingRule" />
         </RuleState>
       </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@55728de9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@55728de9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@29c125d8" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -92,7 +131,8 @@
       <workItem from="1565236142288" duration="3562000" />
       <workItem from="1565318521472" duration="1472000" />
       <workItem from="1565575576225" duration="29000" />
-      <workItem from="1565575642741" duration="9025000" />
+      <workItem from="1565575642741" duration="9108000" />
+      <workItem from="1565650944761" duration="2909000" />
     </task>
     <servers />
   </component>

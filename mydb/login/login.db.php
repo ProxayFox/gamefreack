@@ -6,15 +6,15 @@ require_once('../databaseManager/meekrodb.2.3.class.php');
 require_once('../databaseManager/DBEnter.db.php');
 
 // checking if a post was sent
-if (!empty($_POST['uname'] && $_POST['password'])) {
+if (!empty($_POST['userName'] && $_POST['password'])) {
   //getting the post from the login form
-  $uname = $_POST['uname'];
+  $userName = $_POST['userName'];
   $pwd = $_POST['password'];
   // hashing the password to be checked
   $hashedPWD = hash('sha512', $pwd);
   //starting the session
 
-  $loginResult = DB::queryFirstRow("SELECT LID, CDID FROM login WHERE UName='".$uname."' AND PWD='".$hashedPWD."'");
+  $loginResult = DB::queryFirstRow("SELECT LID, CDID FROM login WHERE UName='".$userName."' AND PWD='".$hashedPWD."'");
 
   if ($loginResult != null) {
       //getting values and assigning them
@@ -25,11 +25,12 @@ if (!empty($_POST['uname'] && $_POST['password'])) {
       $_SESSION['lid'] = $lid;
       $_SESSION['cdid'] = $cdid;
       $_SESSION['start']=1;
-      $_SESSION['user'] = $uname;
+      $_SESSION['user'] = $userName;
     //take the user back to index with a signing success
     header('location: ../../index.php?login=success');
     exit;
   } else {
+    //login failed take user back to index with a get request string of fail
     header('location: ../../index.php?login=fail');
     exit;
   }
