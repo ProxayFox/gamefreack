@@ -85,129 +85,135 @@
 
 
     <?php
-//      $result = DB::query();
+      $result = DB::query('
+        SELECT gameinventory.GIID, gameinventory.productName, gameinventoryIMG.IMG
+        FROM gameinventory RIGHT JOIN gameinventoryimg
+          ON gameinventory.GIID = gameinventoryimg.GIID
+        WHERE gameinventoryimg.IMG REGEXP \'^((?!IMG).)*$\'
+        ORDER BY RAND() LIMIT 6
+      ');
+
+      foreach ($result as $row) {
+        ?>
+        <!-- Recommended Games -->
+        <div class="text-left" style="padding-top: 25px;">
+          <h4>Recommended Games for you</h4>
+        </div>
+
+        <div id="Game" class="carousel slide" data-ride="carousel">
+          <!-- recommended carousel start -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" href="#">
+              <div class="row">
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+                <div class="col-md-4" style="padding-right: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #f5f5f5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                      <div class="caption">
+                        <h3><?php echo $row['productName']; ?></h3>
+                        <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
+                </div><!-- col-md-4 end -->
+
+                <div class="col-md-4" style="padding-left: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #f5f5f5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive"
+                           style="width: 320px;"/>
+                      <div class="caption">
+                        <h3><?php echo $row['productName']; ?></h3>
+                        <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
+                </div><!-- col-md-4 end -->
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+              </div><!-- row end -->
+            </div><!-- carousel item end -->
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" href="#">
+              <div class="row">
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+                <div class="col-md-4" style="padding-right: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #f5f5f5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive"
+                           style="width: 320px;"/>
+                      <div class="caption">
+                        <h3><?php echo $row['productName']; ?></h3>
+                        <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
+                </div><!-- col-md-4 end -->
+
+                <div class="col-md-4" style="padding-left: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #f5f5f5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                      <div class="caption">
+                        <h3><?php echo $row['productName']; ?></h3>
+                        <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
+                </div><!-- col-md-4 end -->
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+              </div><!-- row end -->
+            </div><!-- carousel item end -->
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" href="#">
+              <div class="row">
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+                <div class="col-md-4" style="padding-right: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #f5f5f5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive"
+                           style="width: 320px;"/>
+                      <div class="caption">
+                        <h3><?php echo $row['productName']; ?></h3>
+                        <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
+                </div><!-- col-md-4 end -->
+
+                <div class="col-md-4" style="padding-left: 5px;">
+                  <div class="border border-dark rounded" style="background-color: #f5f5f5;">
+                    <div class="thumbnail" style="padding: 25px;">
+                      <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive"
+                           style="width: 320px;"/>
+                      <div class="caption">
+                        <h3><?php echo $row['productName']; ?></h3>
+                        <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
+                      </div><!-- caption end -->
+                    </div><!-- thumbnail end -->
+                  </div><!-- Border end -->
+                </div><!-- col-md-4 end -->
+                <div class="col-md-2"></div><!-- empty div to force content center -->
+              </div><!-- row end -->
+            </div><!-- carousel item end -->
+
+
+            <a class="carousel-control-prev" href="#Game" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#Game" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div><!-- carousel-slider end -->
+        </div><!-- container -->
+        <?php
+      }
     ?>
-    <!-- Recommended Games -->
-    <div class="text-left" style="padding-top: 25px;">
-      <h4>Recommended Games for you</h4>
-    </div>
-
-    <div id="Game" class="carousel slide" data-ride="carousel">
-      <!-- recommended carousel start -->
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active" href="#">
-          <div class="row">
-            <div class="col-md-2"></div><!-- empty div to force content center -->
-            <div class="col-md-4" style="padding-right: 5px;">
-              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-                <div class="thumbnail" style="padding: 25px;">
-                  <img src="img/gameImg/FarCry5.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
-                  <div class="caption">
-                    <h3>Header Name</h3>
-                    <p>Description</p>
-                    <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                  </div><!-- caption end -->
-                </div><!-- thumbnail end -->
-              </div><!-- Border end -->
-            </div><!-- col-md-4 end -->
-
-            <div class="col-md-4" style="padding-left: 5px;">
-              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-                <div class="thumbnail" style="padding: 25px;">
-                  <img src="img/gameImg/WolfensteinTheOldBlood.webp" alt="ALT NAME" class="img-responsive"
-                       style="width: 320px;"/>
-                  <div class="caption">
-                    <h3>Header Name</h3>
-                    <p>Description</p>
-                    <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                  </div><!-- caption end -->
-                </div><!-- thumbnail end -->
-              </div><!-- Border end -->
-            </div><!-- col-md-4 end -->
-            <div class="col-md-2"></div><!-- empty div to force content center -->
-          </div><!-- row end -->
-        </div><!-- carousel item end -->
-
-        <!-- Slide 2 -->
-        <div class="carousel-item" href="#">
-          <div class="row">
-            <div class="col-md-2"></div><!-- empty div to force content center -->
-            <div class="col-md-4" style="padding-right: 5px;">
-              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-                <div class="thumbnail" style="padding: 25px;">
-                  <img src="img/gameImg/MetroExodus.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
-                  <div class="caption">
-                    <h3>Header Name</h3>
-                    <p>Description</p>
-                    <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                  </div><!-- caption end -->
-                </div><!-- thumbnail end -->
-              </div><!-- Border end -->
-            </div><!-- col-md-4 end -->
-
-            <div class="col-md-4" style="padding-left: 5px;">
-              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-                <div class="thumbnail" style="padding: 25px;">
-                  <img src="img/gameImg/Prey.png" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
-                  <div class="caption">
-                    <h3>Header Name</h3>
-                    <p>Description</p>
-                    <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                  </div><!-- caption end -->
-                </div><!-- thumbnail end -->
-              </div><!-- Border end -->
-            </div><!-- col-md-4 end -->
-            <div class="col-md-2"></div><!-- empty div to force content center -->
-          </div><!-- row end -->
-        </div><!-- carousel item end -->
-
-        <!-- Slide 3 -->
-        <div class="carousel-item" href="#">
-          <div class="row">
-            <div class="col-md-2"></div><!-- empty div to force content center -->
-            <div class="col-md-4" style="padding-right: 5px;">
-              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-                <div class="thumbnail" style="padding: 25px;">
-                  <img src="img/gameImg/FarcryNewDawn.jpg" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
-                  <div class="caption">
-                    <h3>Header Name</h3>
-                    <p>Description</p>
-                    <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                  </div><!-- caption end -->
-                </div><!-- thumbnail end -->
-              </div><!-- Border end -->
-            </div><!-- col-md-4 end -->
-
-            <div class="col-md-4" style="padding-left: 5px;">
-              <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-                <div class="thumbnail" style="padding: 25px;">
-                  <img src="img/gameImg/WolfensteinTheNewOrder.webp" alt="ALT NAME" class="img-responsive"
-                       style="width: 320px;"/>
-                  <div class="caption">
-                    <h3>Header Name</h3>
-                    <p>Description</p>
-                    <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                  </div><!-- caption end -->
-                </div><!-- thumbnail end -->
-              </div><!-- Border end -->
-            </div><!-- col-md-4 end -->
-            <div class="col-md-2"></div><!-- empty div to force content center -->
-          </div><!-- row end -->
-        </div><!-- carousel item end -->
-
-
-        <a class="carousel-control-prev" href="#Game" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#Game" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div><!-- carousel-slider end -->
-    </div><!-- container -->
-
 
     <hr>
 
