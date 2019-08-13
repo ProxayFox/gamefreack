@@ -84,7 +84,9 @@
 
 
 
-
+    <?php
+//      $result = DB::query();
+    ?>
     <!-- Recommended Games -->
     <div class="text-left" style="padding-top: 25px;">
       <h4>Recommended Games for you</h4>
