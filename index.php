@@ -92,8 +92,14 @@
       WHERE gameinventoryimg.IMG REGEXP \'^((?!IMG).)*$\'
       ORDER BY RAND() LIMIT 6
     ');
-    $row = mysqli_fetch_assoc($result);
-    ?>
+    $imageArray = array();
+    $namesArray = array();
+    foreach ($result as $row) {
+    	array_push($imageArray, $row['IMG']);  
+    	array_push($namesArray, $row['productName']);  
+    	}
+  ?>
+
       <!-- Recommended Games -->
       <div class="text-left" style="padding-top: 25px;">
         <h4>Recommended Games for you</h4>
@@ -103,15 +109,19 @@
         <!-- recommended carousel start -->
         <div class="carousel-inner">
           <!-- Slide 1 -->
+          <?php
+          for ($counter = 0; $counter <= count($imageArray)-1; $counter = $counter+=2) {
+          ?>
           <div class="carousel-item active" href="#">
             <div class="row">
               <div class="col-md-2"></div><!-- empty div to force content center -->
               <div class="col-md-4" style="padding-right: 5px;">
                 <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                   <div class="thumbnail" style="padding: 25px;">
-                    <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
+                    <img src="img/gameImg/<?php echo $imageArray[$counter] ?>" alt="ALT NAME" class="img-responsive"
+                         style="width: 320px;"/>
                     <div class="caption">
-                      <h3><?php echo $row['productName']; ?></h3>
+                      <h3><?php echo $namesArray[$counter]; ?></h3>
                       <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
                     </div><!-- caption end -->
                   </div><!-- thumbnail end -->
@@ -121,83 +131,24 @@
               <div class="col-md-4" style="padding-left: 5px;">
                 <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                   <div class="thumbnail" style="padding: 25px;">
-                    <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive"
+                    <img src="img/gameImg/<?php echo $imageArray[$counter + 1] ?>" alt="ALT NAME" class="img-responsive"
                          style="width: 320px;"/>
                     <div class="caption">
-                      <h3><?php echo $row['productName']; ?></h3>
+                      <h3><?php echo $namesArray[$counter + 1]; ?></h3>
                       <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
                     </div><!-- caption end -->
                   </div><!-- thumbnail end -->
                 </div><!-- Border end -->
               </div><!-- col-md-4 end -->
               <div class="col-md-2"></div><!-- empty div to force content center -->
-            </div><!-- row end -->
+          <?php
+          }
+          ?>
+        	  </div><!-- row end -->
           </div><!-- carousel item end -->
+        </div>
 
-          <!-- Slide 2 -->
-          <div class="carousel-item" href="#">
-            <div class="row">
-              <div class="col-md-2"></div><!-- empty div to force content center -->
-              <div class="col-md-4" style="padding-right: 5px;">
-                <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-                  <div class="thumbnail" style="padding: 25px;">
-                    <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive"
-                         style="width: 320px;"/>
-                    <div class="caption">
-                      <h3><?php echo $row['productName']; ?></h3>
-                      <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
-                    </div><!-- caption end -->
-                  </div><!-- thumbnail end -->
-                </div><!-- Border end -->
-              </div><!-- col-md-4 end -->
-
-              <div class="col-md-4" style="padding-left: 5px;">
-                <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-                  <div class="thumbnail" style="padding: 25px;">
-                    <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
-                    <div class="caption">
-                      <h3><?php echo $row['productName']; ?></h3>
-                      <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
-                    </div><!-- caption end -->
-                  </div><!-- thumbnail end -->
-                </div><!-- Border end -->
-              </div><!-- col-md-4 end -->
-              <div class="col-md-2"></div><!-- empty div to force content center -->
-            </div><!-- row end -->
-          </div><!-- carousel item end -->
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" href="#">
-            <div class="row">
-              <div class="col-md-2"></div><!-- empty div to force content center -->
-              <div class="col-md-4" style="padding-right: 5px;">
-                <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-                  <div class="thumbnail" style="padding: 25px;">
-                    <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive"
-                         style="width: 320px;"/>
-                    <div class="caption">
-                      <h3><?php echo $row['productName']; ?></h3>
-                      <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
-                    </div><!-- caption end -->
-                  </div><!-- thumbnail end -->
-                </div><!-- Border end -->
-              </div><!-- col-md-4 end -->
-
-              <div class="col-md-4" style="padding-left: 5px;">
-                <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-                  <div class="thumbnail" style="padding: 25px;">
-                    <img src="img/gameImg/<?php echo $row['IMG']; ?>" alt="ALT NAME" class="img-responsive"
-                         style="width: 320px;"/>
-                    <div class="caption">
-                      <h3><?php echo $row['productName']; ?></h3>
-                      <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
-                    </div><!-- caption end -->
-                  </div><!-- thumbnail end -->
-                </div><!-- Border end -->
-              </div><!-- col-md-4 end -->
-              <div class="col-md-2"></div><!-- empty div to force content center -->
-            </div><!-- row end -->
-          </div><!-- carousel item end -->
+          
 
 
           <a class="carousel-control-prev" href="#Game" role="button" data-slide="prev">
@@ -210,7 +161,6 @@
           </a>
         </div><!-- carousel-slider end -->
       </div><!-- container -->
-
     <hr>
 
 
