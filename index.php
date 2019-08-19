@@ -81,25 +81,6 @@
       <div class="col-lg-2"></div>
     </div><!-- /.row -->
 
-
-
-
-    <?php
-    $result = DB::query('
-      SELECT gameinventory.GIID, gameinventory.productName, gameinventoryIMG.IMG
-      FROM gameinventory RIGHT JOIN gameinventoryimg
-        ON gameinventory.GIID = gameinventoryimg.GIID
-      WHERE gameinventoryimg.IMG REGEXP \'^((?!IMG).)*$\'
-      ORDER BY RAND() LIMIT 6
-    ');
-    $imageArray = array();
-    $namesArray = array();
-    foreach ($result as $row) {
-    	array_push($imageArray, $row['IMG']);  
-    	array_push($namesArray, $row['productName']);  
-    	}
-  ?>
-
       <!-- Recommended Games -->
       <div class="text-left" style="padding-top: 25px;">
         <h4>Recommended Games for you</h4>
@@ -110,18 +91,43 @@
         <div class="carousel-inner">
           <!-- Slide 1 -->
           <?php
-          for ($counter = 0; $counter <= count($imageArray)-1; $counter = $counter+=2) {
+          // Database query
+          $resultGame = DB::query('
+            SELECT gameinventory.GIID, gameinventory.productName, gameinventoryIMG.IMG
+            FROM gameinventory RIGHT JOIN gameinventoryimg
+              ON gameinventory.GIID = gameinventoryimg.GIID
+            WHERE gameinventoryimg.IMG REGEXP \'^((?!IMG).)*$\'
+            ORDER BY RAND() LIMIT 6
+          ');
+
+          //assigning arrays
+          $imageArrayGame = array();
+          $namesArrayGame = array();
+
+          //pushing the array's
+          foreach ($resultGame as $row) {
+            array_push($imageArrayGame, $row['IMG']);
+            array_push($namesArrayGame, $row['productName']);
+          }
+
+          for ($counterGame = 0; $counterGame <= count($imageArrayGame)-1; $counterGame = $counterGame+=2) {
+          if ($counterGame == 0){
+              $activeGame = "active";
+            }
+          else{
+            $activeGame = "";
+          }
           ?>
-          <div class="carousel-item active" href="#">
+          <div class="carousel-item <?php echo $activeGame;?>" href="#">
             <div class="row">
               <div class="col-md-2"></div><!-- empty div to force content center -->
               <div class="col-md-4" style="padding-right: 5px;">
                 <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                   <div class="thumbnail" style="padding: 25px;">
-                    <img src="img/gameImg/<?php echo $imageArray[$counter] ?>" alt="ALT NAME" class="img-responsive"
+                    <img src="img/gameImg/<?php echo $imageArrayGame[$counterGame] ?>" alt="ALT NAME" class="img-responsive"
                          style="width: 320px;"/>
                     <div class="caption">
-                      <h3><?php echo $namesArray[$counter]; ?></h3>
+                      <h4 class="text-center"><?php echo $namesArrayGame[$counterGame]; ?></h4>
                       <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
                     </div><!-- caption end -->
                   </div><!-- thumbnail end -->
@@ -131,26 +137,23 @@
               <div class="col-md-4" style="padding-left: 5px;">
                 <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                   <div class="thumbnail" style="padding: 25px;">
-                    <img src="img/gameImg/<?php echo $imageArray[$counter + 1] ?>" alt="ALT NAME" class="img-responsive"
+                    <img src="img/gameImg/<?php echo $imageArrayGame[$counterGame + 1] ?>" alt="Game IMG" class="img-responsive"
                          style="width: 320px;"/>
                     <div class="caption">
-                      <h3><?php echo $namesArray[$counter + 1]; ?></h3>
+                      <h4 class="text-center"><?php echo $namesArrayGame[$counterGame + 1]; ?></h4>
                       <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
                     </div><!-- caption end -->
                   </div><!-- thumbnail end -->
                 </div><!-- Border end -->
               </div><!-- col-md-4 end -->
               <div class="col-md-2"></div><!-- empty div to force content center -->
-          <?php
+            </div><!-- row end -->
+          </div><!-- carousel item end -->
+            <?php
           }
           ?>
-        	  </div><!-- row end -->
-          </div><!-- carousel item end -->
-        </div>
-
-          
-
-
+        </div><!-- Carousel-inner end -->
+          <!-- Controllers for carousel -->
           <a class="carousel-control-prev" href="#Game" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -160,7 +163,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div><!-- carousel-slider end -->
-      </div><!-- container -->
+
     <hr>
 
 
@@ -172,107 +175,70 @@
   <div id="Consoles" class="carousel slide" data-ride="carousel">
     <!-- recommended carousel start -->
     <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active" href="#">
-        <div class="row">
-          <div class="col-md-2"></div><!-- empty div to force content center -->
-          <div class="col-md-4" style="padding-right: 5px;">
-            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-              <div class="thumbnail" style="padding: 25px;">
-                <img src="img/consoleimg/XBOXOneSBlackIMG1.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
-                <div class="caption">
-                  <h3>Header Name</h3>
-                  <p>Description</p>
-                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                </div><!-- caption end -->
-              </div><!-- thumbnail end -->
-            </div><!-- Border end -->
-          </div><!-- col-md-4 end -->
 
-          <div class="col-md-4" style="padding-left: 5px;">
-            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-              <div class="thumbnail" style="padding: 25px;">
-                <img src="img/consoleimg/XBOXOneSWhiteIMG1.jpg" alt="ALT NAME" class="img-responsive"
-                     style="width: 320px;"/>
-                <div class="caption">
-                  <h3>Header Name</h3>
-                  <p>Description</p>
-                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                </div><!-- caption end -->
-              </div><!-- thumbnail end -->
-            </div><!-- Border end -->
-          </div><!-- col-md-4 end -->
-          <div class="col-md-2"></div><!-- empty div to force content center -->
-        </div><!-- row end -->
-      </div><!-- carousel item end -->
+      <?php
+        // Database query
+        $resultConsoles = DB::query('
+        SELECT consoleinventory.CIID, consoleinventory.productName, consoleinventoryimg.IMG
+        FROM consoleinventory RIGHT JOIN consoleinventoryimg
+          ON consoleinventory.CIID = consoleinventoryimg.CIID
+        WHERE consoleinventoryimg.IMG REGEXP \'^((?!IMG).)*$\'
+        ORDER BY RAND() LIMIT 6
+        ');
 
-      <!-- Slide 2 -->
-      <div class="carousel-item" href="#">
-        <div class="row">
-          <div class="col-md-2"></div><!-- empty div to force content center -->
-          <div class="col-md-4" style="padding-right: 5px;">
-            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-              <div class="thumbnail" style="padding: 25px;">
-                <img src="img/consoleimg/NintendoSwitchBlack.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
-                <div class="caption">
-                  <h3>Header Name</h3>
-                  <p>Description</p>
-                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                </div><!-- caption end -->
-              </div><!-- thumbnail end -->
-            </div><!-- Border end -->
-          </div><!-- col-md-4 end -->
+        //assigning arrays
+        $imageArrayConsoles = array();
+        $namesArrayConsoles = array();
 
-          <div class="col-md-4" style="padding-left: 5px;">
-            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-              <div class="thumbnail" style="padding: 25px;">
-                <img src="img/consoleimg/NintendoSwitchRed.webp" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
-                <div class="caption">
-                  <h3>Header Name</h3>
-                  <p>Description</p>
-                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                </div><!-- caption end -->
-              </div><!-- thumbnail end -->
-            </div><!-- Border end -->
-          </div><!-- col-md-4 end -->
-          <div class="col-md-2"></div><!-- empty div to force content center -->
-        </div><!-- row end -->
-      </div><!-- carousel item end -->
+        //pushing the array's
+        foreach ($resultConsoles as $row) {
+          array_push($imageArrayConsoles, $row['IMG']);
+          array_push($namesArrayConsoles, $row['productName']);
+        }
 
-      <!-- Slide 3 -->
-      <div class="carousel-item" href="#">
-        <div class="row">
-          <div class="col-md-2"></div><!-- empty div to force content center -->
-          <div class="col-md-4" style="padding-right: 5px;">
-            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-              <div class="thumbnail" style="padding: 25px;">
-                <img src="img/consoleimg/PS4BlackIMG1.jpg" alt="ALT NAME" class="img-responsive" style="width: 320px;"/>
-                <div class="caption">
-                  <h3>Header Name</h3>
-                  <p>Description</p>
-                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                </div><!-- caption end -->
-              </div><!-- thumbnail end -->
-            </div><!-- Border end -->
-          </div><!-- col-md-4 end -->
+        for ($counterConsoles = 0; $counterConsoles <= count($imageArrayConsoles)-1; $counterConsoles = $counterConsoles+=2) {
+          if ($counterConsoles == 0) {
+            $activeConsoles = "active";
+          } else {
+            $activeConsoles = "";
+          }
+          ?>
 
-          <div class="col-md-4" style="padding-left: 5px;">
-            <div class="border border-dark rounded" style="background-color: #f5f5f5;">
-              <div class="thumbnail" style="padding: 25px;">
-                <img src="img/consoleimg/PS4WhiteIMG1.webp" alt="ALT NAME" class="img-responsive"
-                     style="width: 320px;"/>
-                <div class="caption">
-                  <h3>Header Name</h3>
-                  <p>Description</p>
-                  <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
-                </div><!-- caption end -->
-              </div><!-- thumbnail end -->
-            </div><!-- Border end -->
-          </div><!-- col-md-4 end -->
-          <div class="col-md-2"></div><!-- empty div to force content center -->
-        </div><!-- row end -->
-      </div><!-- carousel item end -->
+          <!-- Slide 1 -->
+          <div class="carousel-item <?php echo $activeConsoles; ?>" href="#">
+            <div class="row">
+              <div class="col-md-2"></div><!-- empty div to force content center -->
+              <div class="col-md-4" style="padding-right: 5px;">
+                <div class="border border-dark rounded" style="background-color: #f5f5f5;">
+                  <div class="thumbnail" style="padding: 25px;">
+                    <img src="img/consoleimg/<?php echo $imageArrayConsoles[$counterConsoles] ?>" alt="ALT NAME" class="img-responsive"
+                         style="width: 320px;"/>
+                    <div class="caption">
+                      <h4 class="text-center"><?php echo $namesArrayConsoles[$counterConsoles]; ?></h4>
+                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                    </div><!-- caption end -->
+                  </div><!-- thumbnail end -->
+                </div><!-- Border end -->
+              </div><!-- col-md-4 end -->
 
+              <div class="col-md-4" style="padding-left: 5px;">
+                <div class="border border-dark rounded" style="background-color: #f5f5f5;">
+                  <div class="thumbnail" style="padding: 25px;">
+                    <img src="img/consoleimg/<?php echo $imageArrayConsoles[$counterConsoles + 1] ?>" alt="ALT NAME" class="img-responsive"
+                         style="width: 320px;"/>
+                    <div class="caption">
+                      <h4 class="text-center"><?php echo $namesArrayConsoles[$counterConsoles + 1]; ?></h4>
+                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                    </div><!-- caption end -->
+                  </div><!-- thumbnail end -->
+                </div><!-- Border end -->
+              </div><!-- col-md-4 end -->
+              <div class="col-md-2"></div><!-- empty div to force content center -->
+            </div><!-- row end -->
+          </div><!-- carousel item end -->
+      <?php
+        }
+      ?>
 
       <a class="carousel-control-prev" href="#Consoles" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -285,7 +251,7 @@
     </div><!-- carousel-slider end -->
   </div><!-- container -->
   </div><!-- container marketing end -->
-</main>
+</main><!-- main end -->
 
 <?php
   require_once("./layouts/footer.php");
