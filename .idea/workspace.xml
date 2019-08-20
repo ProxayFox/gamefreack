@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Da_AyDOn_MelLooPy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Da_AyDOn_MelLooPy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/accountOrNot/guestHead.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/accountOrNot/guestHead.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/accountOrNot/userHead.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/accountOrNot/userHead.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/login/login.db.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/login/login.db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/register/register.db.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/register/register.db.php" afterDir="false" />
-    </list>
+    <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +139,7 @@
       <workItem from="1565942833777" duration="759000" />
       <workItem from="1566181966605" duration="5231000" />
       <workItem from="1566255966094" duration="2742000" />
+      <workItem from="1566261038396" duration="344000" />
     </task>
     <servers />
   </component>
