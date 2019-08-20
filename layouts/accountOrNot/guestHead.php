@@ -119,21 +119,12 @@
     const btnSignUp = $("#btnSignUp");
 
     if (formChange === 'signIn') {
-      // $("#btnSignIn").fadeOut("slow");
-      // $("#signIn").fadeOut("slow");
-      // $("#btnSignUp").fadeIn("slow");
-      // $("#signUp").fadeIn("slow");
       signIn.removeClass("hidden");
       btnSignUp.removeClass("hidden");
       signUp.addClass("hidden");
       btnSignIn.addClass("hidden");
       console.log("sign in shown")
     } else if(formChange === "signUp") {
-      // let playbackOption = {queue:false, duration:"slow"};
-      // $("#btnSignUp").fadeOut(playbackOption);
-      // $("#signUp").fadeOut(playbackOption);
-      // $("#btnSignIn").fadeIn(playbackOption);
-      // $("#signIn").fadeIn(playbackOption);
       signIn.addClass("hidden");
       btnSignUp.addClass("hidden");
       signUp.removeClass("hidden");

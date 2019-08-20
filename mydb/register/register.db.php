@@ -2,8 +2,8 @@
 require_once('../databaseManager/meekrodb.2.3.class.php');
 require_once('../databaseManager/DBEnter.db.php');
 //	require_once("../databaseManager/o-db.php");
-if (!empty($_POST['uname']) && $_POST['email'] && $_POST['PWD']) {
-  $uname = $_POST['uname'];
+if (!empty($_POST['username']) && $_POST['email'] && $_POST['password']) {
+  $username = $_POST['username'];
   $email = $_POST['email'];
   $pwd = $_POST['PWD'];
   //hashing the password using sha512
@@ -12,7 +12,7 @@ if (!empty($_POST['uname']) && $_POST['email'] && $_POST['PWD']) {
   @$emailTest = DB::query("SELECT email FROM clientData WHERE email = '".$email."'");
   // checking for duplicate email
   if (DB::affectedRows() == 0) { // if $emailTest is not empty than insert into the database
-    @$unameTest = DB::query("SELECT UName FROM login WHERE UName = '".$uname."'");
+    @$usernameTest = DB::query("SELECT UName FROM login WHERE UName = '".$username."'");
     if (DB::affectedRows() == 0) {
       DB::insertIgnore('clientData', array(
         'CDID' => NULL,
@@ -26,22 +26,22 @@ if (!empty($_POST['uname']) && $_POST['email'] && $_POST['PWD']) {
         DB::insert('login', array(
             'LID' => NULL,
             'CDID' => $cdid,
-            'UName' => $uname,
+            'UName' => $username,
             'PWD' => $hashedPWD
         ));
       }
-      header('location: ../../index.php?signup=success');
+      header('location: ../../login.php?signUp=success');
       exit;
       } else {
-      header("Location: ../../index.php?signup=uname");
+      header("Location: ../../login.php?signUp=username");
       exit;
       }
     } else {
-      header("Location: ../../index.php?signup=email");
+      header("Location: ../../login.php?signUp=email");
     exit;
     }
   } else {
-  header("Location: ../../index.php?not_meant_to_be_here");
+  header("Location: ../../login.php?not_meant_to_be_here");
   exit;
 }
 ?>

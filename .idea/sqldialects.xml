@@ -3,8 +3,12 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/SQL/SQL.SQL" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/index.php" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/mydb/login/login.db.php" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/mydb/register/register.db.php" dialect="MariaDB" />
   </component>
   <component name="SqlResolveMappings">
     <file url="file://$PROJECT_DIR$/index.php" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;6f0f34e6-c310-4268-9230-2757f845ba1a&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;schema&quot;,     &quot;node&quot;:{      &quot;name&quot;:{       &quot;@qname&quot;:&quot;gamefreaks&quot;      }     }    }   }  } }}" />
+    <file url="file://$PROJECT_DIR$/mydb/login/login.db.php" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;6f0f34e6-c310-4268-9230-2757f845ba1a&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;schema&quot;,     &quot;node&quot;:{      &quot;name&quot;:{       &quot;@qname&quot;:&quot;gamefreaks&quot;      }     }    }   }  } }}" />
+    <file url="file://$PROJECT_DIR$/mydb/register/register.db.php" scope="{&quot;node&quot;:{  &quot;@negative&quot;:&quot;1&quot;,  &quot;group&quot;:{   &quot;@kind&quot;:&quot;root&quot;,   &quot;node&quot;:{    &quot;name&quot;:{     &quot;@qname&quot;:&quot;6f0f34e6-c310-4268-9230-2757f845ba1a&quot;    },    &quot;group&quot;:{     &quot;@kind&quot;:&quot;schema&quot;,     &quot;node&quot;:{      &quot;name&quot;:{       &quot;@qname&quot;:&quot;gamefreaks&quot;      }     }    }   }  } }}" />
   </component>
 </project>

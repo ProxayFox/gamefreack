@@ -49,11 +49,23 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="PS4.php">Playstation 4</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="xbox.php">Xbox One</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="nintendo.php">Nintendo Switch</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="PC.php">PC Gaming</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="loot.php">Loot</a>
             </li>
 
             <li class="nav-item">
