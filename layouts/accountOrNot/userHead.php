@@ -49,7 +49,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="PS4.php">Playstation 4</a>
+              <a class="nav-link" href="PS4.php">PS4</a>
             </li>
 
             <li class="nav-item">
@@ -61,11 +61,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="PC.php">PC Gaming</a>
+              <a class="nav-link" href="PC.php">PC</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="loot.php">Loot</a>
+              <a class="nav-link" href="profile.pro.php">Profile</a>
             </li>
 
             <li class="nav-item">

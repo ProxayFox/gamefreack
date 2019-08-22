@@ -77,8 +77,8 @@
         <div class="modal-body">
           <!-- Sign in -->
           <form id="signIn" class="login-form" action="mydb/login/login.db.php" method="POST" role="form">
-            <label for="userName" class="sr-only">Enter: Email address</label>
-            <input type="text" id="userName" name="userName" class="form-control" placeholder="Username" required autofocus>
+            <label for="username" class="sr-only">Enter: Email address</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
             <label for="password" class="sr-only">Enter: Password</label>
             <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
             <button class="btn btn-primary btn-lg btn-block" type="submit" style="margin-top: 5px;">Sign In</button>
@@ -86,11 +86,11 @@
 
           <!-- Sign up -->
           <form id="signUp" class="login-form hidden" action="mydb/register/register.db.php" method="POST" role="form">
-            <label for="inputEmail" class="sr-only">Enter New: Username</label>
-            <input type="text" id="userName" name="uname" class="form-control" placeholder="Username" required autofocus>
-            <label for="inputEmail" class="sr-only">Enter New: Email</label>
+            <label for="username" class="sr-only">Enter New: Username</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+            <label for="email" class="sr-only">Enter New: Email</label>
             <input type="text" id="email" name="email" class="form-control" placeholder="Email" required autofocus>
-            <label for="inputPassword" class="sr-only">Enter New: Password</label>
+            <label for="password" class="sr-only">Enter New: Password</label>
             <input type="password" id="password" name="PWD" class="form-control" placeholder="Password" required>
             <button class="btn btn-primary btn-lg btn-block" type="submit" style="margin-top: 5px;">Sign Up</button>
           </form><!-- Sign up End -->

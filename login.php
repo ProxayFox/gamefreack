@@ -10,6 +10,31 @@ require_once("./layouts/header.php");
 
      <section class="container w-50">
        <h1 class="text-center">Time To Login or SignUp</h1>
+
+       <?php
+       //Login Error handling
+       //Informing user of an unsuccessful login attempt
+       if (isset($_GET['login'])) {
+         if ($_GET['login'] == 'fail') {
+           ?>
+              <div class="alert alert-warning" role="alert" style="text-align: center;">
+                Failed to sign in, Username or Password is incorrect
+              </div>
+            <?php
+         }
+       }
+       //Telling the user that they where successful at signing up
+       if (isset($_GET['placement'])) {
+         if ($_GET['placement'] == 'NULL') {
+           ?>
+              <div class="alert alert-warning" role="alert" style="text-align: center;">
+                Server or Client Error
+              </div>
+           <?php
+         }
+       }
+       ?>
+
        <div class="border" style="background-color: #E1E1E1;">
          <!-- Sign in -->
          <form id="signIn" class="login-form container w-75 pt-3" action="mydb/login/login.db.php" method="POST" role="form">

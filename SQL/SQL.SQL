@@ -53,7 +53,8 @@ CREATE TABLE gameInventory(
   genre VARCHAR(100) NOT NULL,
   briefDescription TEXT(500) NOT NULL,
   longDescription TEXT(5000) NOT NULL,
-  Requirements TEXT(500) NOT NULL
+  Requirements TEXT(500) NOT NULL,
+  price DECIMAL(10,2)
 );
 
 CREATE TABLE  gameInventoryIMG (
@@ -87,7 +88,7 @@ CREATE TABLE userGameComment(
   date date NOT NULL,
   comment TEXT(500) NOT NULL,
   FOREIGN KEY (CPID)  REFERENCES clientProfile(CPID) ON DELETE CASCADE,
-  FOREIGN KEY (IID)  REFERENCES gameInventory(GIID) ON DELETE CASCADE
+  FOREIGN KEY (GIID)  REFERENCES gameInventory(GIID) ON DELETE CASCADE
 );
 
 CREATE TABLE consoleInventory(
@@ -97,7 +98,8 @@ CREATE TABLE consoleInventory(
   manufacturer VARCHAR(255) NOT NULL,
   releaseDates DATE NOT NULL,
   briefDescription TEXT(300) NOT NULL,
-  longDescription TEXT(1000) NOT NULL
+  longDescription TEXT(1000) NOT NULL,
+  price DECIMAL(10,2)
 );
 
 CREATE TABLE  consoleInventoryIMG (
@@ -216,7 +218,7 @@ INSERT INTO guestGameComments (GGCID, GIID, username, date, comment) VALUES
   (2, 2, 'Prox', '2019-04-25 16:51:34', 'great game'),
   (3, 3, 'Prox', '2019-04-25 16:51:34', 'great game');
 
-INSERT INTO userGameComment (UGCID, CPID, IID, date, comment) VALUES
+INSERT INTO userGameComment (UGCID, CPID, GIID, date, comment) VALUES
   (1, 1, 1, '2019-04-25 16:51:34', 'great game'),
   (2, 2, 2, '2019-04-25 16:51:34', 'great game'),
   (3, 3, 3, '2019-04-25 16:51:34', 'great game');
@@ -264,7 +266,7 @@ INSERT INTO guestConsoleComments (GCCID, CIID, username, date, comment) VALUES
   (2, 2, 'Prox', '2019-04-25 16:51:34', 'great game'),
   (3, 3, 'Prox', '2019-04-25 16:51:34', 'great game');
 
-INSERT INTo userConsoleComment (UCCID, CPID, IID, date, comment) VALUES
+INSERT INTO userConsoleComment (UCCID, CPID, CIID, date, comment) VALUES
   (1, 1, 1, '2019-04-25 16:51:34', 'great console'),
   (2, 2, 2, '2019-04-25 16:51:34', 'great console'),
   (3, 3, 3, '2019-04-25 16:51:34', 'great console');

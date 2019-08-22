@@ -35,6 +35,6 @@ if (!empty($_POST['username'] && $_POST['password'])) {
   }
 } else {
   // redirect the user back to the index with a message of they aren't meant to be here
-  header("Location: ../../login.php?not_meant_to_be_here");
+  header("Location: ../../login.php?placement=NULL");
   exit;
 }
