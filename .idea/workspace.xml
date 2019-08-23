@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/forum/Overview.pro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/forum/accountSettings.pro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/forum/help.pro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/forum/profileActivity.pro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/forum/savedInventory.pro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.SQL" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.SQL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/accountOrNot/guestHead.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/accountOrNot/guestHead.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/accountOrNot/userHead.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/accountOrNot/userHead.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/login/login.db.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/login/login.db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/profile/Overview.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/Overview.pro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/profile/help.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/help.pro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/profile/savedInventory.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/savedInventory.pro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/register/register.db.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/register/register.db.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.pro.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,20 +53,6 @@
         <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="gamefreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="gamefreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="consoleinventory: table" type="dbc44a63:MariaImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="gamefreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="consoleinventoryimg: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -113,7 +105,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@380dadc9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@67957430" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@67957430" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@7a72dd8b" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -160,7 +157,8 @@
       <workItem from="1566262711821" duration="255000" />
       <workItem from="1566270626804" duration="1013000" />
       <workItem from="1566445046313" duration="4214000" />
-      <workItem from="1566517449308" duration="1272000" />
+      <workItem from="1566517449308" duration="1327000" />
+      <workItem from="1566525787360" duration="8005000" />
     </task>
     <servers />
   </component>

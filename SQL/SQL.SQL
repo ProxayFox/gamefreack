@@ -219,9 +219,11 @@ INSERT INTO guestGameComments (GGCID, GIID, username, date, comment) VALUES
   (3, 3, 'Prox', '2019-04-25 16:51:34', 'great game');
 
 INSERT INTO userGameComment (UGCID, CPID, GIID, date, comment) VALUES
-  (1, 1, 1, '2019-04-25 16:51:34', 'great game'),
-  (2, 2, 2, '2019-04-25 16:51:34', 'great game'),
-  (3, 3, 3, '2019-04-25 16:51:34', 'great game');
+  (NULL, 1, 1, '2019-04-25 16:51:34', 'great game'),
+  (NULL, 1, 2, '2019-04-25 16:51:34', 'great game'),
+  (NULL, 1, 3, '2019-04-25 16:51:34', 'great game'),
+  (NULL, 2, 2, '2019-04-25 16:51:34', 'great game'),
+  (NULL, 3, 3, '2019-04-25 16:51:34', 'great game');
 
 INSERT INTO consoleInventory(CIID, productName, producer, manufacturer, releaseDates, briefDescription, longDescription) VALUES
 (1, 'Nintendo Switch Black', 'Nintendo', 'Foxconn', '2017-03-03', 'The Nintendo Switch is a hybrid video game console, consisting of a console unit, a dock, and two Joy-Con controllers. Although it is a hybrid console, Nintendo classifies it as "a home console that you can take with you on the go', 'The Nintendo Switch[a] is a video game console developed by Nintendo and released on March 3, 2017. It is a hybrid console that can be used as both a stationary and portable device. Its wireless Joy-Con controllers, which include standard buttons and directional analog sticks for user input, motion sensing, and high-definition tactile feedback, can attach to both sides of the console to support handheld-style play. They can also connect to a Grip accessory to provide a traditional home console gamepad form, or be used individually in the hand like the Wii Remote and Nunchuk, supporting local multiplayer modes. The Nintendo Switch''s software supports online gaming through standard Internet connectivity, as well as local wireless ad hoc connectivity with other Switch consoles. Nintendo Switch games and software are available on both physical flash-based ROM cartridges and digital distribution via Nintendo eShop; the system does not use region locking. As an eighth-generation console, the Nintendo Switch competes with Microsoft''s Xbox One and Sony''s PlayStation 4. Known in development by its codename NX, the concept of the Switch came about as Nintendo''s reaction to several quarters of financial losses into 2014, attributed to poor sales of its previous console, the Wii U, and market competition from mobile gaming. Nintendo''s then-president Satoru Iwata pushed the company towards mobile gaming and novel hardware. The Nintendo Switch''s design is aimed at a wide demographic of video game players through the multiple modes of use. Nintendo opted to use more standard electronic components, such as a chipset based on Nvidia''s Tegra line, to make development for the console easier for programmers and more compatible with existing game engines. As the Wii U had struggled to gain external support, leaving it with a weak software library, Nintendo preemptively sought the support of many third-party developers and publishers to help build out the Switch''s game library alongside Nintendo''s own first-party titles, including many independent video game studios. While Nintendo initially anticipated around 100 titles for its first year, over 320 titles from first-party, third-party, and independent developers were released by the end of 2017. The Nintendo Switch was unveiled in October 2016 and was released in most areas worldwide on March 3, 2017.[b] The console shipped nearly three million in the first month of its launch, exceeding Nintendo''s initial projection of two million, and within a year of release achieved over 14 million units sold worldwide, outselling total lifetime sales of the Wii U. By the start of 2018, the Switch became the fastest-selling home console in both Japan and the United States. As of December 2018, Nintendo Switch has sold more than 32 million units worldwide. Switch sales have been strongly tied to sales of Nintendo''s first-party titles, with five games, The Legend of Zelda: Breath of the Wild, Super Smash Bros. Ultimate, Super Mario Odyssey, Mario Kart 8 Deluxe, and Pokémon: Let''s Go having sold over ten million units each. A handheld-focused revision of the system, called the Nintendo Switch Lite, is scheduled for release in September 2019.'),
@@ -267,6 +269,8 @@ INSERT INTO guestConsoleComments (GCCID, CIID, username, date, comment) VALUES
   (3, 3, 'Prox', '2019-04-25 16:51:34', 'great game');
 
 INSERT INTO userConsoleComment (UCCID, CPID, CIID, date, comment) VALUES
-  (1, 1, 1, '2019-04-25 16:51:34', 'great console'),
-  (2, 2, 2, '2019-04-25 16:51:34', 'great console'),
-  (3, 3, 3, '2019-04-25 16:51:34', 'great console');
+  (NULL, 1, 1, '2019-04-25 16:51:34', 'great console'),
+  (NULL, 1, 2, '2019-04-25 16:51:34', 'great console'),
+  (NULL, 1, 3, '2019-04-25 16:51:34', 'great console'),
+  (NULL, 2, 2, '2019-04-25 16:51:34', 'great console'),
+  (NULL, 3, 3, '2019-04-25 16:51:34', 'great console');

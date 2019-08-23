@@ -91,7 +91,7 @@
             <label for="email" class="sr-only">Enter New: Email</label>
             <input type="text" id="email" name="email" class="form-control" placeholder="Email" required autofocus>
             <label for="password" class="sr-only">Enter New: Password</label>
-            <input type="password" id="password" name="PWD" class="form-control" placeholder="Password" required>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
             <button class="btn btn-primary btn-lg btn-block" type="submit" style="margin-top: 5px;">Sign Up</button>
           </form><!-- Sign up End -->
 

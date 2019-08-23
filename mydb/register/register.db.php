@@ -5,7 +5,7 @@ require_once('../databaseManager/DBEnter.db.php');
 if (!empty($_POST['username']) && $_POST['email'] && $_POST['password']) {
   $username = $_POST['username'];
   $email = $_POST['email'];
-  $pwd = $_POST['PWD'];
+  $pwd = $_POST['password'];
   //hashing the password using sha512
   $hashedPWD = hash('sha512', $pwd);
 
@@ -28,6 +28,13 @@ if (!empty($_POST['username']) && $_POST['email'] && $_POST['password']) {
             'CDID' => $cdid,
             'UName' => $username,
             'PWD' => $hashedPWD
+        ));
+
+        DB::insert('clientProfile', array(
+          'CPID' => NULL,
+          'CDID' => $cdid,
+          'displayName' => $username,
+          'UIMG' => NULL
         ));
       }
       header('location: ../../login.php?signUp=success');
