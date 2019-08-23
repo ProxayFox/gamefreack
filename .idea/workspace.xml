@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SQL/SQL.SQL" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.SQL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/accountOrNot/guestHead.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/accountOrNot/guestHead.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/accountOrNot/userHead.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/accountOrNot/userHead.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/login/login.db.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/login/login.db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/profile/Overview.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/Overview.pro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/profile/help.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/help.pro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/profile/savedInventory.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/savedInventory.pro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/register/register.db.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/register/register.db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.pro.php" afterDir="false" />
-    </list>
+    <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +144,7 @@
       <workItem from="1566270626804" duration="1013000" />
       <workItem from="1566445046313" duration="4214000" />
       <workItem from="1566517449308" duration="1327000" />
-      <workItem from="1566525787360" duration="8005000" />
+      <workItem from="1566525787360" duration="8098000" />
     </task>
     <servers />
   </component>
