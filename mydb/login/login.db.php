@@ -14,8 +14,8 @@ if (!empty($_POST['username'] && $_POST['password'])) {
   //starting the session
 
   $loginResult = DB::queryFirstRow("
-    SELECT login.LID, login.CDID, clientprofile.CPID
-FROM login RIGHT JOIN clientprofile ON login.CDID = clientprofile.CDID
+    SELECT login.LID, login.CDID, clientProfile.CPID
+FROM login RIGHT JOIN clientProfile ON login.CDID = clientProfile.CDID
 WHERE login.UName='".$username."' AND login.PWD='".$hashedPWD."'
   ");
 
