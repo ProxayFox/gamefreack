@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/index.php" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/mydb/login/login.db.php" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/mydb/profile/Overview.pro.show.php" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/mydb/profile/accountSettings.pro.db.php" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/mydb/register/register.db.php" dialect="MariaDB" />
   </component>
   <component name="SqlResolveMappings">

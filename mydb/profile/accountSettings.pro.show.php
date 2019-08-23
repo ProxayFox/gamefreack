@@ -26,6 +26,23 @@
       $(btnAddress).removeClass("btn-outline-primary");
     });
   });
+
+  $(document).ready(function() {
+    $("#btnNames").click(function () {
+      $('#spinner').addClass('spinner-border spinner-border-sm');
+      $.post("./mydb/profile/accountSettings.pro.db.php", {
+          title: $("#fName").val(),
+          info: $("#lName").val()
+        },
+        function (data, status) {
+          $('#spinner').removeClass('spinner-border spinner-border-sm');
+          $('#fName').val('');
+          $('#lName').val('');
+          console.log(data, status);
+        }
+      )
+    });
+  });
 </script>
 
 <div class="row">
@@ -52,25 +69,32 @@
         </div>
       </div>
       <div style="padding-top: 10px;">
-        <a class="btn btn-outline-primary" id="submitNames">Update</a>
+        <a class="btn btn-outline-primary" id="btnNames">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner"></span></a>
       </div>
     </div>
     <hr>
     <div class="form-group" id="email">
       <label for="formEmail">Email</label>
       <input class="form-control" id="formEmail" name="email" type="email" placeholder="Email...">
-      <a class="btn btn-outline-primary" id="submitEmail">Update</a>
+      <div style="padding-top: 10px;">
+        <a class="btn btn-outline-primary" id="threadUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner"></span></a>
+      </div>
     </div>
     <hr>
     <div class="form-group" id="displayName">
       <label for="formDisplayName">Display Name</label>
       <input class="form-control" id="formDisplayName" name="displayName" type="email" placeholder="Display Name...">
-      <a class="btn btn-outline-primary" id="submitEmail">Update</a>
+      <div style="padding-top: 10px;">
+        <a class="btn btn-outline-primary" id="threadUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner"></span></a>
+      </div>
     </div>
     <hr>
     <div class="form-group" id="image">
       <label for="exampleFormControlFile1">Update Profile Image</label>
       <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      <div style="padding-top: 10px;">
+        <a class="btn btn-outline-primary" id="threadUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner"></span></a>
+      </div>
     </div>
   </section>
   <section id="address" class="d-none">
@@ -94,6 +118,9 @@
           <label for="state">State</label>
           <input class="form-control" id="state" name="state" type="text" placeholder="State..." >
         </div>
+      </div>
+      <div style="padding-top: 10px;">
+        <a class="btn btn-outline-primary" id="threadUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner"></span></a>
       </div>
     </div>
   </section>
