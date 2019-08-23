@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="" />
+    <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/profile/Overview.pro.show.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/Overview.pro.show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.show.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.pro.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +45,13 @@
         <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="gamefreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - @localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="gamefreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="clientprofile: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -144,7 +157,7 @@
       <workItem from="1566270626804" duration="1013000" />
       <workItem from="1566445046313" duration="4214000" />
       <workItem from="1566517449308" duration="1327000" />
-      <workItem from="1566525787360" duration="8098000" />
+      <workItem from="1566525787360" duration="8558000" />
     </task>
     <servers />
   </component>

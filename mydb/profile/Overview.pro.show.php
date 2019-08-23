@@ -1,6 +1,7 @@
 <?php
   session_start();
   require_once("../databaseManager/DBEnter.db.php");
+
   $consoleResult = DB::query("
     SELECT userConsoleComment.date, userConsoleComment.comment, consoleInventory.productName, consoleInventoryIMG.IMG
     FROM userConsoleComment

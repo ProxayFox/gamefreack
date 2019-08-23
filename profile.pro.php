@@ -10,26 +10,26 @@ if (!empty($_SESSION['user'] && $_SESSION['start'] && $_SESSION['cdid'] && $_SES
  <script>
    $(document).ready(function() {
      //loading overview as the default
-     $("#leftSection").load("./mydb/profile/Overview.pro.php");
+     $("#leftSection").load("./mydb/profile/Overview.pro.show.php");
 
      $("#btnOverview").click(function () {
        //loading the Overview page/section
-       $("#leftSection").load("./mydb/profile/Overview.pro.php");
+       $("#leftSection").load("./mydb/profile/Overview.pro.show.php");
      });//btn Overview trigger end
 
      $("#btnAccountSettings").click(function () {
        //loading the account settings page/section
-       $("#leftSection").load("./mydb/profile/accountSettings.pro.php");
+       $("#leftSection").load("./mydb/profile/accountSettings.pro.show.php");
      });//btn account settings trigger end
 
      $("#btnSavedInventory").click(function () {
        //loading the saved Inventory page/section
-       $("#leftSection").load("./mydb/profile/savedInventory.pro.php");
+       $("#leftSection").load("./mydb/profile/savedInventory.pro.show.php");
      });//btn saved inventory trigger end
 
      $("#btnHelp").click(function () {
        //loading the Help page/section
-       $("#leftSection").load("./mydb/profile/help.pro.php");
+       $("#leftSection").load("./mydb/profile/help.pro.show.php");
      });//btn help trigger end
    });//document.ready end
  </script>
