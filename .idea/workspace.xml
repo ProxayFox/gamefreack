@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/login/login.db.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/login/login.db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.db.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/SQL.SQL" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.SQL" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.show.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.show.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,6 +43,13 @@
         <item name="gameFreaks@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="gameFreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="gameFreaks@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="gameFreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="clientAddress: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -95,12 +99,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@24022cd3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -147,6 +146,7 @@
       <workItem from="1566445046313" duration="4214000" />
       <workItem from="1566517449308" duration="1327000" />
       <workItem from="1566525787360" duration="8558000" />
+      <workItem from="1566554036283" duration="3285000" />
     </task>
     <servers />
   </component>

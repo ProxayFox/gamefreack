@@ -26,8 +26,6 @@ CREATE TABLE clientReward(
 CREATE TABLE clientAddress(
   CAID INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   CDID INT(11) NOT NULL,
-  unit INT(11),
-  buildingNumber INT(11),
   street VARCHAR(100),
   suburb VARCHAR(100),
   city VARCHAR(100),
