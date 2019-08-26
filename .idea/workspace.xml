@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.address.pro.db.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.general.pro.db.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.image.pro.db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/profile/Overview.pro.show.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/Overview.pro.show.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.show.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettingsWorker/accountSettings.image.pro.db.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/accountSettingsWorker/accountSettings.image.pro.db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.pro.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.pro.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,25 +35,18 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="gamefreaks@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="gameFreaks@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="gamefreaks@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="gameFreaks@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="gamefreaks@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="gameFreaks@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="gamefreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="gamefreaks@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="gamefreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="clientprofile: table" type="dbc44a63:MariaImplModel$Table" />
+        <item name="gameFreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -105,12 +99,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f32724d7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@783a0a51" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f32724d7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@e85d010" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@783a0a51" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4127a54d" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -160,6 +154,7 @@
       <workItem from="1566517449308" duration="1327000" />
       <workItem from="1566525787360" duration="8558000" />
       <workItem from="1566554036283" duration="5615000" />
+      <workItem from="1566813116680" duration="5156000" />
     </task>
     <servers />
   </component>

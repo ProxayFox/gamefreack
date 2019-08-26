@@ -81,7 +81,7 @@
     <div class="row d-none" id="game">
       <?php foreach ($gameResult as $row) { ?>
         <div class="col-2">
-          <img src="./img/gameimg/<?php echo $row['IMG']?>" class="w-75 d-block mx-auto rounded" alt="product image">
+          <img src="./img/gameImg/<?php echo $row['IMG']?>" class="w-75 d-block mx-auto rounded" alt="product image">
         </div>
         <div class="col-10">
           <div class="row">

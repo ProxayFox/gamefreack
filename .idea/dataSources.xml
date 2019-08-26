@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="gamefreaks@localhost" uuid="d82a49d1-2778-46dc-ad64-19597d6c0e6f">
+    <data-source source="LOCAL" name="gameFreaks@localhost" uuid="e788f590-6aa1-4e00-9606-88791faeb00e">
       <driver-ref>mariadb</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mariadb://localhost:3306/gamefreaks</jdbc-url>
+      <jdbc-url>jdbc:mariadb://localhost:3306/gameFreaks</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

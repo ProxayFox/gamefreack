@@ -6,6 +6,8 @@ if (!empty($_SESSION['user'] && $_SESSION['start'] && $_SESSION['cdid'] && $_SES
   require_once("./layouts/header.php");
   //database connection
   require_once("./mydb/databaseManager/DBEnter.db.php");
+
+  $resultImage = DB::queryFirstRow("SELECT UIMG FROM clientProfile WHERE CPID = ".$_SESSION['cpid']);
   ?>
  <script>
    $(document).ready(function() {
@@ -39,7 +41,11 @@ if (!empty($_SESSION['user'] && $_SESSION['start'] && $_SESSION['cdid'] && $_SES
      <section class="col-3 border border-dark">
        <div>
          <!-- Users IMG -->
-         <img src="img/profileIMG/11e79c5bd7cf103d.png" class="w-75 d-block mx-auto rounded" alt="Profile Image">
+         <img
+             src="img/profileIMG/<?php if (!empty($resultImage['UIMG'])) { echo $resultImage['UIMG'];} else {echo "44fdc40.jpg";} ?>"
+             class="w-75 d-block mx-auto rounded"
+             alt="Profile Image"
+         >
          <h5 class="text-center">Username</h5>
        </div>
        <!-- buttons that will activate the right side of the page -->

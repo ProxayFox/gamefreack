@@ -8,6 +8,10 @@
       ON clientData.CDID = clientProfile.CDID
     WHERE clientData.CDID = '".$_SESSION['cdid']."' AND clientProfile.CPID = '".$_SESSION['cpid']."'
   ");
+
+  $resultImage = DB::queryFirstRow("
+    SELECT UIMG FROM clientProfile WHERE CPID = '".$_SESSION['cpid']."'
+  ");
 ?>
 
 <script>
@@ -37,7 +41,7 @@
 
   $(document).ready(function() {
     $("#generalUpdate").click(function () {
-      $('#spinner').addClass('spinner-border spinner-border-sm');
+      $('#spinner0').addClass('spinner-border spinner-border-sm');
       $.post("./mydb/profile/accountSettingsWorker/accountSettings.general.pro.db.php", {
           fName:        $("#fName").val(),
           lName:        $("#lName").val(),
@@ -45,7 +49,7 @@
           displayName:  $("#formDisplayName").val()
         },
         function (data, status) {
-          $('#spinner').removeClass('spinner-border spinner-border-sm');
+          $('#spinner0').removeClass('spinner-border spinner-border-sm');
           $("#fName").val("<?php echo $resultGeneral['fName']; ?>");
           $("#lName").val("<?php echo $resultGeneral['lName']; ?>");
           $("#formEmail").val("<?php echo $resultGeneral['email']; ?>");
@@ -65,12 +69,12 @@
 
   $(document).ready(function() {
     $("#imageUpdate").click(function () {
-      $('#spinner').addClass('spinner-border spinner-border-sm');
+      $('#spinner1').addClass('spinner-border spinner-border-sm');
       $.post("./mydb/profile/accountSettingsWorker/accountSettings.image.pro.db.php", {
             imageName: $("#image").val()
           },
           function (data, status) {
-            $('#spinner').removeClass('spinner-border spinner-border-sm');
+            $('#spinner1').removeClass('spinner-border spinner-border-sm');
             $("#image").val("");
             console.log(data, status);
           }
@@ -80,7 +84,7 @@
 
   $(document).ready(function() {
     $("#addressUpdate").click(function () {
-      $('#spinner').addClass('spinner-border spinner-border-sm');
+      $('#spinner2').addClass('spinner-border spinner-border-sm');
       $.post("./mydb/profile/accountSettingsWorker/accountSettings.address.pro.db.php", {
           address: $("#address").val(),
           suburb: $("#suburb").val(),
@@ -88,7 +92,7 @@
           states: $("#states").val()
         },
         function (data, status) {
-          $('#spinner').removeClass('spinner-border spinner-border-sm');
+          $('#spinner2').removeClass('spinner-border spinner-border-sm');
           $("#address").val("");
           $("#suburb").val("");
           $("#city").val("");
@@ -164,7 +168,7 @@
   <div class="row">
     <div class="col2">
       <div style="padding-top: 10px;">
-        <a class="btn btn-outline-primary" id="generalUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner"></span></a>
+        <a class="btn btn-outline-primary" id="generalUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner0"></span></a>
       </div>
     </div>
     <div class="col-2" id="generalMessage"></div>
@@ -175,12 +179,17 @@
   <!-- user profile image input -->
   <div id="img">
     <label for="image">Update Profile Image</label>
-    <input type="file" class="form-control-file" id="image">
+    <input
+        type="file"
+        value="./img/profileImg/<?php echo $resultImage['UIMG']; ?>"
+        class="form-control-file"
+        id="image"
+    >
   </div>
 
   <!-- submit for user profile image -->
   <div style="padding-top: 10px; padding-bottom: 10px;">
-    <a class="btn btn-outline-primary" id="imageUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner"></span></a>
+    <a class="btn btn-outline-primary" id="imageUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner1"></span></a>
   </div>
 
 </section>
@@ -215,6 +224,6 @@
     </div>
   </div>
   <div style="padding-top: 10px;">
-    <a class="btn btn-outline-primary" id="addressUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner"></span></a>
+    <a class="btn btn-outline-primary" id="addressUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner2"></span></a>
   </div>
 </section>
