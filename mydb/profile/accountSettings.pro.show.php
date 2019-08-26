@@ -1,6 +1,13 @@
 <?php
   session_start();
   require_once("../databaseManager/DBEnter.db.php");
+
+  $resultGeneral = DB::queryFirstRow("
+    SELECT clientData.fName, clientData.lName, clientData.email, clientProfile.displayName
+    FROM clientData RIGHT JOIN clientProfile
+      ON clientData.CDID = clientProfile.CDID
+    WHERE clientData.CDID = '".$_SESSION['cdid']."' AND clientProfile.CPID = '".$_SESSION['cpid']."'
+    ");
 ?>
 
 <script>
@@ -96,15 +103,6 @@
 </div>
 
 <section class="container" id="general">
-
-  <?php
-    $resultGeneral = DB::queryFirstRow("
-    SELECT clientData.fName, clientData.lName, clientData.email, clientProfile.displayName
-    FROM clientData RIGHT JOIN clientProfile
-      ON clientData.CDID = clientProfile.CDID
-    WHERE clientData.CDID = '".$_SESSION['cdid']."' AND clientProfile.CPID = '".$_SESSION['cpid']."'
-    ");
-  ?>
 
   <!-- first and last name input -->
   <div class="row">
