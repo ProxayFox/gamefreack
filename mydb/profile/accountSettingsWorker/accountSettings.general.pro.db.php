@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("../databaseManager/DBEnter.db.php");
+require_once("../../databaseManager/DBEnter.db.php");
 
 if (!empty($_SESSION['lid'] && $_SESSION['cdid'] && $_SESSION['cpid'] && $_SESSION['start'] && $_SESSION['user'])) {
   if (!empty($_POST['fName'] && $_POST['lName'] && $_POST['email'] && $_POST['displayName'])) {
@@ -30,7 +30,7 @@ if (!empty($_SESSION['lid'] && $_SESSION['cdid'] && $_SESSION['cpid'] && $_SESSI
       ));
 
       if (DB::affectedRows() == 2) {
-        echo "success";
+        echo "success".DB::affectedRows();
       } else {
         echo "fail1".DB::affectedRows();
       }

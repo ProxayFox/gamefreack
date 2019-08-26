@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.address.pro.db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.general.pro.db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.image.pro.db.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.show.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/profile/accountSettings.pro.show.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,13 +46,6 @@
         <item name="gamefreaks@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="gamefreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="gamefreaks@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="gamefreaks: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="clientdata: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />

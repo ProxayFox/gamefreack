@@ -7,10 +7,11 @@
     FROM clientData RIGHT JOIN clientProfile
       ON clientData.CDID = clientProfile.CDID
     WHERE clientData.CDID = '".$_SESSION['cdid']."' AND clientProfile.CPID = '".$_SESSION['cpid']."'
-    ");
+  ");
 ?>
 
 <script>
+
   $(document).ready(function() {
     $("#btnGeneral").click(function () {
       const btnGeneral = $("#btnGeneral");
@@ -37,7 +38,7 @@
   $(document).ready(function() {
     $("#generalUpdate").click(function () {
       $('#spinner').addClass('spinner-border spinner-border-sm');
-      $.post("./mydb/profile/accountSettings.general.pro.db.php", {
+      $.post("./mydb/profile/accountSettingsWorker/accountSettings.general.pro.db.php", {
           fName:        $("#fName").val(),
           lName:        $("#lName").val(),
           email:        $("#formEmail").val(),
@@ -45,11 +46,18 @@
         },
         function (data, status) {
           $('#spinner').removeClass('spinner-border spinner-border-sm');
-          $("#fName").val("");
-          $("#lName").val("");
-          $("#formEmail").val("");
-          $("#formDisplayName").val("");
+          $("#fName").val("<?php echo $resultGeneral['fName']; ?>");
+          $("#lName").val("<?php echo $resultGeneral['lName']; ?>");
+          $("#formEmail").val("<?php echo $resultGeneral['email']; ?>");
+          $("#formDisplayName").val("<?php echo $resultGeneral['displayName']; ?>");
           console.log(data, status);
+          if (data === "fail20") {
+            $("#generalMessage").text("No New Values");
+          } else if (data === "success2") {
+            $("#generalMessage").text("Data Updated");
+          } else {
+            $("#generalMessage").text("Server Error");
+          }
         }
       )
     });
@@ -58,8 +66,8 @@
   $(document).ready(function() {
     $("#imageUpdate").click(function () {
       $('#spinner').addClass('spinner-border spinner-border-sm');
-      $.post("./mydb/profile/accountSettings.image.pro.db.php", {
-            uimg: $("#image").val()
+      $.post("./mydb/profile/accountSettingsWorker/accountSettings.image.pro.db.php", {
+            imageName: $("#image").val()
           },
           function (data, status) {
             $('#spinner').removeClass('spinner-border spinner-border-sm');
@@ -73,7 +81,7 @@
   $(document).ready(function() {
     $("#addressUpdate").click(function () {
       $('#spinner').addClass('spinner-border spinner-border-sm');
-      $.post("./mydb/profile/accountSettings.address.pro.db.php", {
+      $.post("./mydb/profile/accountSettingsWorker/accountSettings.address.pro.db.php", {
           address: $("#address").val(),
           suburb: $("#suburb").val(),
           city: $("#city").val(),
@@ -153,8 +161,13 @@
   >
 
   <!-- submit button for general account settings -->
-  <div style="padding-top: 10px;">
-    <a class="btn btn-outline-primary" id="generalUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner"></span></a>
+  <div class="row">
+    <div class="col2">
+      <div style="padding-top: 10px;">
+        <a class="btn btn-outline-primary" id="generalUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner"></span></a>
+      </div>
+    </div>
+    <div class="col-2" id="generalMessage"></div>
   </div>
 
   <hr>
