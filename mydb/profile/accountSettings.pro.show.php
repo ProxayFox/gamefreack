@@ -86,17 +86,19 @@
     $("#addressUpdate").click(function () {
       $('#spinner2').addClass('spinner-border spinner-border-sm');
       $.post("./mydb/profile/accountSettingsWorker/accountSettings.address.pro.db.php", {
-          address: $("#address").val(),
-          suburb: $("#suburb").val(),
-          city: $("#city").val(),
-          states: $("#states").val()
+          address:    $("#formAddress").val(),
+          suburb:     $("#suburb").val(),
+          city:       $("#city").val(),
+          state:     $("#state").val(),
+          postCode:   $("#postCode").val()
         },
         function (data, status) {
           $('#spinner2').removeClass('spinner-border spinner-border-sm');
-          $("#address").val("");
+          $("#formAddress").val("");
           $("#suburb").val("");
           $("#city").val("");
           $("#states").val("");
+          $("#postCode").val("");
           console.log(data, status);
         }
       )
@@ -198,7 +200,7 @@
   <div class="row">
     <div class="col-6">
       <label for="street">Address</label>
-      <input class="form-control" id="street" name="street" type="text" placeholder="Street Name..." >
+      <input class="form-control" id="formAddress" name="formAddress" type="text" placeholder="Street Name..." >
     </div>
     <div class="col-6">
       <label for="suburb">Suburb</label>
@@ -212,16 +214,20 @@
     </div>
     <div class="form-group col-6">
       <label for="states">Example multiple select</label>
-      <select class="form-control" id="states" name="states">
-        <option>Queensland</option>
-        <option>New South Wales</option>
-        <option>Victoria</option>
-        <option>Tasmania</option>
-        <option>Australia Capital Territory</option>
-        <option>Northern Territory</option>
-        <option>Western Australia</option>
+      <select class="form-control" id="state" name="states">
+        <option value="QLD">Queensland</option>
+        <option value="NSW">New South Wales</option>
+        <option value="VIC">Victoria</option>
+        <option value="TAS">Tasmania</option>
+        <option value="ACT">Australia Capital Territory</option>
+        <option value="NT">Northern Territory</option>
+        <option value="WA">Western Australia</option>
       </select>
     </div>
+  </div>
+  <div class="form-group">
+    <label for="postCode">Post Code</label>
+    <input type="text" class="form-control" id="postCode" maxlength="4">
   </div>
   <div style="padding-top: 10px;">
     <a class="btn btn-outline-primary" id="addressUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner2"></span></a>

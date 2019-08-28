@@ -26,11 +26,11 @@ CREATE TABLE clientReward(
 CREATE TABLE clientAddress(
   CAID INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   CDID INT(11) NOT NULL,
-  street VARCHAR(100),
+  address VARCHAR(100),
   suburb VARCHAR(100),
   city VARCHAR(100),
-  state INT(3),
-  postNo INT(5),
+  state VARCHAR(3),
+  postCode INT(5),
   FOREIGN KEY (CDID) 	REFERENCES clientData(CDID) ON DELETE CASCADE
 );
 
@@ -149,7 +149,7 @@ INSERT INTO clientReward (`CRID`, `CDID`, `points`, `level`) VALUES
   (2, 2, 5, 2),
   (3, 3, 1, 1);
 
-INSERT INTO clientAddress (CAID, CDID, unit, buildingNumber, street, suburb, city, state, postNo) VALUES
+INSERT INTO clientAddress (CAID, CDID, unit, buildingNumber, address, suburb, city, state, postCode) VALUES
   (1, 1, 10, 7, 'Boundary st', 'Brisbane', 'Brisbane', 'QLD', 4000),
   (2, 2, NULL, 183, 'Beddoes st', 'Holland pk', 'Brisbane', 'QLD', 4121),
   (3, 3, NULL, 7, 'Boundary st', 'Holland pk', 'Brisbane', 'QLD', 4121);
