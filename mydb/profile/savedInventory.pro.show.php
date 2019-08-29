@@ -2,24 +2,11 @@
 session_start();
 require_once("../databaseManager/DBEnter.db.php");
 
-  //Query the data base for data
-  $resultSavedGame = DB::query("SELECT GIID FROM savedgameinventory WHERE CDID = ".$_SESSION['cdid']);
-  //Assign a veriable to a string
-  $GIID = array();
-
-  foreach ($resultSavedGame as $row) {
-    echo $row['GIID'].", ";
-    array_push($GIID, $row['GIID']);
-  }
-
-  $gameArray = join($GIID, ", " );
-  echo $gameArray."<br>";
-  echo "WHERE GIID IN (".$gameArray.")";
-  $resultGameInventory = DB::query("
+$resultGameInventory = DB::query("
     SELECT GIID, productName, releaseDates
     FROM gameInventory
-    WHERE GIID IN (.$gameArray.)
-  ");
+    WHERE GIID IN (SELECT GIID FROM savedGameInventory WHERE CDID = '".$_SESSION['cdid']."')
+");
 ?>
 
   <section class="container">
