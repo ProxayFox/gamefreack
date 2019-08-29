@@ -113,8 +113,7 @@
           for ($counterGame = 0; $counterGame <= count($imageArrayGame)-1; $counterGame = $counterGame+=2) {
           if ($counterGame == 0){
               $activeGame = "active";
-            }
-          else{
+          } else {
             $activeGame = "";
           }
           ?>
@@ -124,7 +123,7 @@
               <div class="col-md-4" style="padding-right: 5px;">
                 <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                   <div class="thumbnail" style="padding: 25px;">
-                    <img src="img/gameImg/<?php echo $imageArrayGame[$counterGame] ?>" alt="ALT NAME" class="img-responsive"
+                    <img src="img/gameImg/<?php echo $imageArrayGame[$counterGame]; ?>" alt="ALT NAME" class="img-responsive"
                          style="width: 320px;"/>
                     <div class="caption">
                       <h4 class="text-center"><?php echo $namesArrayGame[$counterGame]; ?></h4>
@@ -137,7 +136,7 @@
               <div class="col-md-4" style="padding-left: 5px;">
                 <div class="border border-dark rounded" style="background-color: #f5f5f5;">
                   <div class="thumbnail" style="padding: 25px;">
-                    <img src="img/gameImg/<?php echo $imageArrayGame[$counterGame + 1] ?>" alt="Game IMG" class="img-responsive"
+                    <img src="img/gameImg/<?php echo $imageArrayGame[$counterGame + 1]; ?>" alt="Game IMG" class="img-responsive"
                          style="width: 320px;"/>
                     <div class="caption">
                       <h4 class="text-center"><?php echo $namesArrayGame[$counterGame + 1]; ?></h4>

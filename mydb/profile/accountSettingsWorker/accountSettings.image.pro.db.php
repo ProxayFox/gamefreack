@@ -2,6 +2,8 @@
 session_start();
 require_once("../../databaseManager/DBEnter.db.php");
 
+print_r($_FILES);
+
 if (!empty($_SESSION['lid'] && $_SESSION['cdid'] && $_SESSION['cpid'] && $_SESSION['start'] && $_SESSION['user'])) {
   if (!empty($_POST['imageName'])) {
 
@@ -51,7 +53,7 @@ if (!empty($_SESSION['lid'] && $_SESSION['cdid'] && $_SESSION['cpid'] && $_SESSI
         echo "Error While Uploading";
       }
     } else {
-      echo "Wrong File Type ".$imgName;
+      echo "Wrong File Type ".$img;
     }
   } else {
     echo "Missing Values";

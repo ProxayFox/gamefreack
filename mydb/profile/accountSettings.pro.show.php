@@ -208,7 +208,6 @@
     <label for="image">Update Profile Image</label>
     <input
         type="file"
-        value="./img/profileImg/<?php echo $resultImage['UIMG']; ?>"
         class="form-control-file"
         id="image"
     ><!-- input end -->

@@ -149,10 +149,10 @@ INSERT INTO clientReward (`CRID`, `CDID`, `points`, `level`) VALUES
   (2, 2, 5, 2),
   (3, 3, 1, 1);
 
-INSERT INTO clientAddress (CAID, CDID, unit, buildingNumber, address, suburb, city, state, postCode) VALUES
-  (1, 1, 10, 7, 'Boundary st', 'Brisbane', 'Brisbane', 'QLD', 4000),
-  (2, 2, NULL, 183, 'Beddoes st', 'Holland pk', 'Brisbane', 'QLD', 4121),
-  (3, 3, NULL, 7, 'Boundary st', 'Holland pk', 'Brisbane', 'QLD', 4121);
+INSERT INTO clientAddress (CAID, CDID, address, suburb, city, state, postCode) VALUES
+  (1, 1, 'Boundary st', 'Brisbane', 'Brisbane', 'QLD', 4000),
+  (2, 2, 'Beddoes st', 'Holland pk', 'Brisbane', 'QLD', 4121),
+  (3, 3, 'Boundary st', 'Holland pk', 'Brisbane', 'QLD', 4121);
 
 INSERT INTO login (`LID`, `CDID`, `UName`, `PWD`) VALUES
   (1, 1, 'atcav', 'e6c83b282aeb2e022844595721cc00bbda47cb24537c1779f9bb84f04039e1676e6ba8573e588da1052510e3aa0a32a9e55879ae22b0c2d62136fc0a3e85f8bb'),
