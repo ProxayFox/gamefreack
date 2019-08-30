@@ -3,11 +3,9 @@
 <script>
   $(document).ready(function() {
     $('[data-toggle="popover"]').popover();
-    console.log("ready");
 
     $("#postUpdate").click(function () {
       window.location.href = "mydb/login/logout.db.php";
-      console.log('logged out');
     });
   });
 </script>
