@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Da_AyDOn_MelLooPy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Da_AyDOn_MelLooPy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PC.php" beforeDir="false" afterPath="$PROJECT_DIR$/PC.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PS4.php" beforeDir="false" afterPath="$PROJECT_DIR$/PS4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SQL/SQL.SQL" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.SQL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nintendo.php" beforeDir="false" afterPath="$PROJECT_DIR$/nintendo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xbox.php" beforeDir="false" afterPath="$PROJECT_DIR$/xbox.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +167,7 @@
       <workItem from="1567046031637" duration="8234000" />
       <workItem from="1567121945322" duration="1541000" />
       <workItem from="1567124037317" duration="3639000" />
-      <workItem from="1567128405255" duration="3573000" />
+      <workItem from="1567128405255" duration="6934000" />
     </task>
     <servers />
   </component>
