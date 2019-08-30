@@ -4,6 +4,7 @@
       <w>atcav</w>
       <w>bbda</w>
       <w>beddoes</w>
+      <w>bluetooth</w>
       <w>cfcb</w>
       <w>consoleimg</w>
       <w>eaee</w>
@@ -20,14 +21,18 @@
       <w>meekro</w>
       <w>meekrodb</w>
       <w>megga</w>
+      <w>microarchitecture</w>
       <w>morgs</w>
       <w>mydb</w>
       <w>prox</w>
       <w>spambi</w>
+      <w>teraflops</w>
       <w>topbar</w>
+      <w>touchpad</w>
       <w>webp</w>
       <w>wolfenstein</w>
       <w>xbox</w>
+      <w>xboximg</w>
     </words>
   </dictionary>
 </component>

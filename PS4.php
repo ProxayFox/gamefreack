@@ -7,7 +7,7 @@ $resultGame = DB::query('
   SELECT gameInventory.GIID, gameInventory.productName, gameInventoryIMG.IMG
   FROM gameInventory RIGHT JOIN gameInventoryIMG
     ON gameInventory.GIID = gameInventoryIMG.GIID
-  WHERE gameInventoryIMG.IMG REGEXP \'^((?!IMG).)*$\'
+  WHERE gameInventoryIMG.IMG REGEXP \'^((?!IMG).)*$\' AND gameInventory.platForm IN (3, 6)
   ORDER BY RAND() LIMIT 6
 ');
 
@@ -16,12 +16,12 @@ $resultConsoles = DB::query('
   SELECT consoleInventory.CIID, consoleInventory.productName, consoleInventoryImg.IMG
   FROM consoleInventory RIGHT JOIN consoleInventoryImg
     ON consoleInventory.CIID = consoleInventoryImg.CIID
-  WHERE consoleInventoryImg.IMG REGEXP \'^((?!IMG).)*$\'
+  WHERE consoleInventoryImg.IMG REGEXP \'^((?!IMG).)*$\' AND consoleInventory.platForm = 3
   ORDER BY RAND() LIMIT 6
 ');
 ?>
 
-  <main role="main" style="padding-top: 83px; background-color: #c6c6c6;">
+  <main role="main" style="padding-top: 83px;">
     <!-- top of the page banner -->
     <header role="banner">
       <img class="w-100" src="img/consoleBanner/PS4IMG2.jpg" alt="Banner for PS4">
@@ -34,7 +34,7 @@ $resultConsoles = DB::query('
       </div>
 
       <!-- PS4 Games Carousel 1 start-->
-      <div id="Game" class="carousel slide" data-ride="carousel">
+      <div id="Console" class="carousel slide" data-ride="carousel">
         <!-- recommended carousel start -->
         <div class="carousel-inner">
           <?php
@@ -92,11 +92,11 @@ $resultConsoles = DB::query('
           <?php } ?>
         </div><!-- Carousel-inner end -->
         <!-- Controllers for carousel -->
-        <a class="carousel-control-prev" href="#Game" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#Console" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#Game" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#Console" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
@@ -118,15 +118,6 @@ $resultConsoles = DB::query('
         <div class="carousel-inner">
           <!-- Slide 1 -->
           <?php
-          // Database query for game data
-          $resultGame = DB::query('
-              SELECT gameInventory.GIID, gameInventory.productName, gameInventoryIMG.IMG
-              FROM gameInventory RIGHT JOIN gameInventoryIMG
-                ON gameInventory.GIID = gameInventoryIMG.GIID
-              WHERE gameInventoryIMG.IMG REGEXP \'^((?!IMG).)*$\'
-              ORDER BY RAND() LIMIT 6
-            ');
-
           //assigning arrays
           $imageArrayGame = array();
           $namesArrayGame = array();

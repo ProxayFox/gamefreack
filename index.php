@@ -166,7 +166,7 @@
     <hr>
 
 
-  <!-- console recommendations corousel 2 start-->
+  <!-- console recommendations carousel 2 start-->
   <div class="text-left" style="padding-top: 25px;">
     <h4>Recommended Consoles for you</h4>
   </div>

@@ -21,7 +21,7 @@
   <!-- Colour palate -->
   <!-- https://www.color-hex.com/color-palette/191 -->
 </head>
-<body style="background-color: #E3E3E3;">
+<body style="background-color: #c6c6c6;">
 <style>
   .hidden {
     display: none !important;
