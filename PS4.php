@@ -11,27 +11,6 @@ $resultGame = DB::query('
   ORDER BY RAND() LIMIT 6
 ');
 
-//assigning Game arrays
-$imageArrayGame = array();
-$namesArrayGame = array();
-
-//pushing the data into the game arrays
-foreach ($resultGame as $row) {
-  array_push($imageArrayGame, $row['IMG']);
-  array_push($namesArrayGame, $row['productName']);
-}
-
-//looping the data and adding 1 to separate each row
-for ($counterGame = 0; $counterGame <= count($imageArrayGame)-1; $counterGame = $counterGame+=2) {
-  if ($counterGame == 0) {
-    //Making sure the carousel only shows one item at a time by making the fist slide active
-    $activeGame = "active";
-  } else {
-    // making sure if the slide is greater than on to deactivate active
-    $activeGame = "";
-  }
-}
-
 // Database query for console data
 $resultConsoles = DB::query('
   SELECT consoleInventory.CIID, consoleInventory.productName, consoleInventoryImg.IMG
@@ -211,7 +190,6 @@ $resultConsoles = DB::query('
         </a>
       </div><!-- carousel-slider end -->
       <!-- carousel 1 end -->
-
     </section>
   </main>
 
