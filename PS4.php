@@ -1,5 +1,24 @@
 <?php
 require_once("./layouts/header.php");
+
+// Database query for game data
+$resultGame = DB::query('
+  SELECT gameInventory.GIID, gameInventory.productName, gameInventoryIMG.IMG
+  FROM gameInventory RIGHT JOIN gameInventoryIMG
+    ON gameInventory.GIID = gameInventoryIMG.GIID
+  WHERE gameInventoryIMG.IMG REGEXP \'^((?!IMG).)*$\'
+  ORDER BY RAND() LIMIT 6
+');
+
+// Database query for console data
+$resultConsoles = DB::query('
+  SELECT consoleInventory.CIID, consoleInventory.productName, consoleInventoryImg.IMG
+  FROM consoleInventory RIGHT JOIN consoleInventoryImg
+    ON consoleInventory.CIID = consoleInventoryImg.CIID
+  WHERE consoleInventoryImg.IMG REGEXP \'^((?!IMG).)*$\'
+  ORDER BY RAND() LIMIT 6
+');
+
 ?>
 
   <main role="main" style="padding-top: 83px; background-color: #c6c6c6;">

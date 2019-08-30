@@ -91,14 +91,14 @@
         <div class="carousel-inner">
           <!-- Slide 1 -->
           <?php
-          // Database query
-          $resultGame = DB::query('
-            SELECT gameinventory.GIID, gameinventory.productName, gameinventoryIMG.IMG
-            FROM gameinventory RIGHT JOIN gameinventoryimg
-              ON gameinventory.GIID = gameinventoryimg.GIID
-            WHERE gameinventoryimg.IMG REGEXP \'^((?!IMG).)*$\'
-            ORDER BY RAND() LIMIT 6
-          ');
+            // Database query for game data
+            $resultGame = DB::query('
+              SELECT gameInventory.GIID, gameInventory.productName, gameInventoryIMG.IMG
+              FROM gameInventory RIGHT JOIN gameInventoryIMG
+                ON gameInventory.GIID = gameInventoryIMG.GIID
+              WHERE gameInventoryIMG.IMG REGEXP \'^((?!IMG).)*$\'
+              ORDER BY RAND() LIMIT 6
+            ');
 
           //assigning arrays
           $imageArrayGame = array();
@@ -176,13 +176,13 @@
     <div class="carousel-inner">
 
       <?php
-        // Database query
+        // Database query for console data
         $resultConsoles = DB::query('
-        SELECT consoleinventory.CIID, consoleinventory.productName, consoleinventoryimg.IMG
-        FROM consoleinventory RIGHT JOIN consoleinventoryimg
-          ON consoleinventory.CIID = consoleinventoryimg.CIID
-        WHERE consoleinventoryimg.IMG REGEXP \'^((?!IMG).)*$\'
-        ORDER BY RAND() LIMIT 6
+          SELECT consoleInventory.CIID, consoleInventory.productName, consoleInventoryImg.IMG
+          FROM consoleInventory RIGHT JOIN consoleInventoryImg
+            ON consoleInventory.CIID = consoleInventoryImg.CIID
+          WHERE consoleInventoryImg.IMG REGEXP \'^((?!IMG).)*$\'
+          ORDER BY RAND() LIMIT 6
         ');
 
         //assigning arrays
