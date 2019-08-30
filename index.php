@@ -81,7 +81,7 @@
       <div class="col-lg-2"></div>
     </div><!-- /.row -->
 
-      <!-- Recommended Games -->
+      <!-- Recommended Games Carousel 1 start-->
       <div class="text-left" style="padding-top: 25px;">
         <h4>Recommended Games for you</h4>
       </div>
@@ -162,11 +162,11 @@
             <span class="sr-only">Next</span>
           </a>
         </div><!-- carousel-slider end -->
-
+    <!-- carousel 1 end -->
     <hr>
 
 
-  <!-- console recommendations -->
+  <!-- console recommendations corousel 2 start-->
   <div class="text-left" style="padding-top: 25px;">
     <h4>Recommended Consoles for you</h4>
   </div>
@@ -248,6 +248,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div><!-- carousel-slider end -->
+    <!-- carousel 2 end -->
   </div><!-- container -->
   </div><!-- container marketing end -->
 </main><!-- main end -->
