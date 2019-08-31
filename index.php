@@ -89,7 +89,6 @@
       <div id="Game" class="carousel slide" data-ride="carousel">
         <!-- recommended carousel start -->
         <div class="carousel-inner">
-          <!-- Slide 1 -->
           <?php
             // Database query for game data
             $resultGame = DB::query('

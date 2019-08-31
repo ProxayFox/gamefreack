@@ -1,6 +1,19 @@
 <?php
 require_once("./layouts/header.php");
 require_once("./mydb/databaseManager/DBEnter.db.php");
+$resultMainImg = DB::queryFirstRow("
+  SELECT IMG 
+  FROM gameinventoryimg 
+  WHERE GIID = '".$_GET['GIID']."'
+    AND IMG REGEXP '^((?!IMG).)*$'
+");
+
+$resultCarouselImg = DB::query("
+  SELECT IMG 
+  FROM gameinventoryimg 
+  WHERE GIID = '".$_GET['GIID']."'
+    AND IMG REGEXP 'IMG'
+");
 
 ?>
 
@@ -63,44 +76,77 @@ require_once("./mydb/databaseManager/DBEnter.db.php");
     <!-- left side Image selector -->
     <div class="col-md-8">
       <div>
-        <img id="mainImage" class="w-75 d-block mx-auto rounded" src="img/gameImg/Prey.png" alt="Game Image">
+      <div>
+        <img id="mainImage" class="w-75 d-block mx-auto rounded" src="img/gameImg/<?php echo $resultMainImg['IMG']; ?>" alt="Game Image">
       </div>
 
       <!-- carousel under the main image, also a selector -->
       <div id="imageCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active" style="padding-left: 10%; padding-right: 10%;">
+          <?php
+          // Database query for game Images
+          $resultCarouselImg = DB::query("
+            SELECT IMG 
+            FROM gameinventoryimg 
+            WHERE GIID = '".$_GET['GIID']."'
+              AND IMG REGEXP 'IMG'
+          ");
+
+          //assigning arrays
+          $imageArrayGame = array();
+
+          //pushing the array's
+          foreach ($resultCarouselImg as $row) {
+            array_push($imageArrayGame, $row['IMG']);
+          }
+
+          for ($counterGame = 0; $counterGame <= count($imageArrayGame)-1; $counterGame = $counterGame+=2) {
+          if ($counterGame == 0){
+            $activeGame = "active";
+          } else {
+            $activeGame = "";
+          }
+          ?>
+          <div class="carousel-item <?php echo $activeGame;?>" style="padding-left: 10%; padding-right: 10%;">
             <div class="row">
               <div class="col-3">
-                <img class="d-block mx-auto align w-100 rounded" id="1" onclick="imgOnClickChange('img/gameImg/PreyIMG1.jpg')" src="img/gameImg/PreyIMG1.jpg" alt="First slide">
+                <img
+                    class="d-block mx-auto align w-100 rounded"
+                    id="1"
+                    onclick="imgOnClickChange('img/gameImg/<?php echo $resultMainImg['IMG']; ?>')"
+                    src="img/gameImg/<?php echo $resultMainImg['IMG']; ?>"
+                    alt="First slide"
+                >
               </div>
               <div class="col-3">
-                <img class="d-block mx-auto align w-100 rounded" id="2" onclick="imgOnClickChange('img/gameImg/PreyIMG2.jpg')" src="img/gameImg/PreyIMG2.jpg" alt="First slide">
+                <img
+                    class="d-block mx-auto align w-100 rounded"
+                    id="2"
+                    onclick="imgOnClickChange('img/gameImg/<?php echo $imageArrayGame[$counterGame]; ?>')"
+                    src="img/gameImg/<?php echo $imageArrayGame[$counterGame]; ?>"
+                    alt="First slide"
+                >
               </div>
               <div class="col-3">
-                <img class="d-block mx-auto align w-100 rounded" id="3" onclick="imgOnClickChange('img/gameImg/PreyIMG3.jpg')" src="img/gameImg/PreyIMG3.jpg" alt="First slide">
+                <img
+                    class="d-block mx-auto align w-100 rounded"
+                    id="3"
+                    onclick="imgOnClickChange('img/gameImg/<?php echo $imageArrayGame[$counterGame + 1]; ?>')"
+                    src="img/gameImg/<?php echo $imageArrayGame[$counterGame + 1]; ?>"
+                    alt="First slide"
+                >
               </div>
               <div class="col-3">
-                <img class="d-block mx-auto align w-100 rounded" id="4" onclick="imgOnClickChange('img/gameImg/Prey.png')" src="img/gameImg/Prey.png" alt="First slide">
+                <img
+                    class="d-block mx-auto align w-100 rounded"
+                    id="4"
+                    onclick="imgOnClickChange('img/gameImg/<?php echo $imageArrayGame[$counterGame + 2]; ?>')"
+                    src="img/gameImg/<?php echo $imageArrayGame[$counterGame + 2]; ?>"
+                    alt="First slide"
+                >
               </div>
             </div>
-          </div><!-- Carousel Item end -->
-          <div class="carousel-item" style="padding-left: 10%; padding-right: 10%;">
-          <div class="row">
-            <div class=" col-3">
-              <img class="d-block mx-auto w-100 align rounded" id="5" src="img/gameImg/PreyIMG1.jpg" alt="First slide">
-            </div>
-            <div class=" col-3">
-              <img class="d-block mx-auto w-100 align rounded" id="6" src="img/gameImg/PreyIMG2.jpg" alt="First slide">
-            </div>
-            <div class=" col-3">
-              <img class="d-block mx-auto w-100 align rounded" id="7" src="img/gameImg/PreyIMG3.jpg" alt="First slide">
-            </div>
-            <div class=" col-3">
-              <img class="d-block mx-auto w-100 align rounded" id="8" src="img/gameImg/Prey.png" alt="First slide">
-            </div>
-          </div>
-        </div><!-- Carousel Item end -->
+            <?php } ?>
         </div><!-- Carousel Inner end -->
         <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -110,7 +156,9 @@ require_once("./mydb/databaseManager/DBEnter.db.php");
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
+        </div>
       </div><!-- Carousel end -->
+    </div>
     </div><!--col-md-8 end--->
 
     <!-- right side Product saving and small information -->
