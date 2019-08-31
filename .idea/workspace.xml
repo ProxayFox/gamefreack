@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/atcav.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/atcav.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gameContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/gameContent.php" afterDir="false" />
     </list>
@@ -40,13 +39,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="gamefreaks: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="gameFreaks@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="gamefreaks: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="gameinventoryimg: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -55,15 +47,28 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gameContent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="162" column="21" lean-forward="true" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
+            <state relative-caret-position="276">
+              <caret line="132" column="30" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h5#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h5#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h5#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/usergamecomment">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -78,6 +83,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>reviews</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -109,17 +119,6 @@
             <path>
               <item name="gamefreack" type="b2602c69:ProjectViewProjectNode" />
               <item name="gamefreack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gamefreack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gamefreack" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gamefreack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gamefreack" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="gameImg" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -239,12 +238,12 @@
       <workItem from="1567239002639" duration="32000" />
       <workItem from="1567239052296" duration="2672000" />
       <workItem from="1567241748872" duration="522000" />
-      <workItem from="1567242288461" duration="3732000" />
+      <workItem from="1567242288461" duration="5311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7458000" />
+    <option name="totallyTimeSpent" value="9037000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -259,7 +258,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18316196" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18316196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -272,13 +271,13 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32914925" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32974428" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32914925" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32914925" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.18894601" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18894601" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +334,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/savedgameinventory">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/gameinventory">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/usergamecomment">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -344,10 +357,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gameContent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="162" column="21" lean-forward="true" selection-start-line="162" selection-start-column="21" selection-end-line="162" selection-end-column="21" />
+        <state relative-caret-position="276">
+          <caret line="132" column="30" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h5#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h5#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h5#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
