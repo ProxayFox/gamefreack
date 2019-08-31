@@ -81,7 +81,7 @@ $resultUserReview = DB::query("
 
     $("#btnUserComment").click(function () {
       $('#spinner0').addClass('spinner-border spinner-border-sm');
-      $.post("./mydb/profile/content/gameContent.worker.php", {
+      $.post("./mydb/content/gameContent.worker.php", {
         comment:     $("#userComment").val(),
         GIID:        $("#formGIID").val(),
       },
@@ -89,12 +89,12 @@ $resultUserReview = DB::query("
         $('#spinner0').removeClass('spinner-border spinner-border-sm');
         $("#userComment").val("");
         console.log(data, status);
-        if (data === "fail20") {
-          $("#generalMessage").text("No New Values");
-        } else if (data === "success2") {
-          $("#generalMessage").text("Data Updated");
-        } else {
+        if (data === "fail0") {
           $("#generalMessage").text("Server Error");
+        } else if (data === "success1") {
+          $("#generalMessage").text("Message Sent");
+        } else {
+          $("#generalMessage").text("Missing Values");
         }
       })
     });
@@ -358,6 +358,7 @@ $resultUserReview = DB::query("
                     <textarea type="text" id="userComment" style="margin-bottom: 5px;" class="form-control" placeholder="Enter Comment"></textarea>
                     <input id="formGIID" type="hidden" value="<?php echo $_GET['GIID']; ?>">
                     <a class="btn btn-outline-primary" id="btnUserComment">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner0"></span></a>
+                    <div id="generalMessage"></div>
                   </div><!-- col-8 end -->
                   <div class="col-2"></div>
                 </div><!-- row end -->

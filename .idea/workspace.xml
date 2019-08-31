@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SQL/SQL.SQL" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/SQL.SQL" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gameContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/gameContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/content/gameContent.worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/content/gameContent.worker.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,16 +54,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gameContent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="83" column="63" lean-forward="true" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="63" />
+            <state relative-caret-position="439">
+              <caret line="92" column="49" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#small#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#h5#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#h5#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#h5#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
@@ -75,13 +75,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mydb/profile/accountSettings.pro.show.php">
+        <entry file="file://$PROJECT_DIR$/mydb/content/gameContent.worker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="197" column="152" lean-forward="true" selection-start-line="197" selection-start-column="8" selection-end-line="197" selection-end-column="152" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#1;n#section#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="506">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e788f590-6aa1-4e00-9606-88791faeb00e/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" selection-start-column="14" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mydb/profile/accountSettingsWorker/accountSettings.address.pro.db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="102" lean-forward="true" selection-start-line="7" selection-start-column="102" selection-end-line="7" selection-end-column="102" />
             </state>
           </provider>
         </entry>
@@ -105,8 +120,9 @@
       <list>
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e788f590-6aa1-4e00-9606-88791faeb00e/console.sql" />
         <option value="$PROJECT_DIR$/SQL/SQL.SQL" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e788f590-6aa1-4e00-9606-88791faeb00e/console.sql" />
+        <option value="$PROJECT_DIR$/mydb/content/gameContent.worker.php" />
         <option value="$PROJECT_DIR$/gameContent.php" />
       </list>
     </option>
@@ -142,6 +158,19 @@
               <item name="gamefreack" type="462c0819:PsiDirectoryNode" />
               <item name="mydb" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamefreack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamefreack" type="462c0819:PsiDirectoryNode" />
+              <item name="mydb" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamefreack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamefreack" type="462c0819:PsiDirectoryNode" />
+              <item name="mydb" type="462c0819:PsiDirectoryNode" />
+              <item name="profile" type="462c0819:PsiDirectoryNode" />
+              <item name="accountSettingsWorker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gamefreack" type="b2602c69:ProjectViewProjectNode" />
@@ -266,12 +295,12 @@
       <workItem from="1567239002639" duration="32000" />
       <workItem from="1567239052296" duration="2672000" />
       <workItem from="1567241748872" duration="522000" />
-      <workItem from="1567242288461" duration="13739000" />
+      <workItem from="1567242288461" duration="14572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17465000" />
+    <option name="totallyTimeSpent" value="18298000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -286,7 +315,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.18508998" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.18508998" />
       <window_info id="Structure" order="1" sideWeight="0.5011338" side_tool="true" weight="0.18316196" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -305,7 +334,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18894601" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.18894601" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,13 +391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mydb/profile/accountSettingsWorker/accountSettings.address.pro.db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/guestgamecomments">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -417,20 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e788f590-6aa1-4e00-9606-88791faeb00e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/usergamecomment">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SQL/SQL.SQL">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -448,18 +456,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mydb/profile/accountSettingsWorker/accountSettings.address.pro.db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="102" lean-forward="true" selection-start-line="7" selection-start-column="102" selection-end-line="7" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e788f590-6aa1-4e00-9606-88791faeb00e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/usergamecomment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydb/content/gameContent.worker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gameContent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="83" column="63" lean-forward="true" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="63" />
+        <state relative-caret-position="439">
+          <caret line="92" column="49" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#small#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h5#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#h5#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#h5#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#!!top" expanded="true" />
