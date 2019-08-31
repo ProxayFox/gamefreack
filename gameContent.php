@@ -2,7 +2,6 @@
 require_once("./layouts/header.php");
 require_once("./mydb/databaseManager/DBEnter.db.php");
 
-//$result = DB::queryFirstRow("");
 ?>
 
 <style>
@@ -36,14 +35,20 @@ require_once("./mydb/databaseManager/DBEnter.db.php");
       $("#delivery").toggleClass("d-none");//toggle class on click
     });
 
-    $("#overview").click(function () {
-
+    $("#btnOverview").click(function () {
+      $("#overview").removeClass('d-none');
+      $("#reviews").addClass('d-none');
+      $("#specification").addClass('d-none');
     });
-    $("#reviews").click(function () {
-
+    $("#btnReviews").click(function () {
+      $("#overview").addClass('d-none');
+      $("#reviews").removeClass('d-none');
+      $("#specification").addClass('d-none');
     });
-    $("#specification").click(function () {
-
+    $("#btnSpecification").click(function () {
+      $("#overview").addClass('d-none');
+      $("#reviews").addClass('d-none');
+      $("#specification").removeClass('d-none');
     });
 
 
@@ -152,7 +157,7 @@ require_once("./mydb/databaseManager/DBEnter.db.php");
     <div class="container" style="background-color: #f9f9f9">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!-- main section visible on load -->
-        <a class="navbar-brand" href="#">Overview</a>
+        <a class="navbar-brand" id="btnOverview">Overview</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -161,10 +166,10 @@ require_once("./mydb/databaseManager/DBEnter.db.php");
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Reviews</a>
+              <a class="nav-link" id="btnReviews">Reviews</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Specifications</a>
+              <a class="nav-link" id="btnSpecification">Specifications</a>
             </li>
           </ul>
         </div>
@@ -181,53 +186,69 @@ require_once("./mydb/databaseManager/DBEnter.db.php");
 
 
       <!-- Reviews section -->
-      <div id="reviews" class="row d-none">
-        <div class="col-md-6">
-          <h3>Users</h3><!-- random order and set amount -->
+      <div id="reviews" class="d-none">
+          <small style="color: #999;">Will Randomly select 6 Items</small>
           <div class="row">
-            <div class="col-md-3">
-              <img class="w-100 rounded" src="./img/profileIMG/11e79c5bd7cf103d.png" alt="Profile Image">
+          <div class="col-md-6">
+            <h3>Users</h3><!-- random order and set amount -->
+            <div class="row">
+              <div class="col-md-3">
+                <img class="w-100 rounded" src="./img/profileIMG/11e79c5bd7cf103d.png" alt="Profile Image">
+              </div>
+              <div class="col-md-5">
+                <h5><span style="color: #999;">Name: </span><span>Ayden</span></h5>
+              </div>
+              <div class="col-md-4">
+                <h5><span style="color: #999;">Date: </span><span>09/08/2001</span></h5>
+              </div>
             </div>
-            <div class="col-md-5">
-              <h5><span style="color: #999;">Name: </span><span>Ayden</span></h5>
-            </div>
-            <div class="col-md-4">
-              <h5><span style="color: #999;">Date: </span><span>09/08/2001</span></h5>
+            <div class="row">
+              <div class="col-md-3">
+                <h5>Comment: </h5>
+              </div>
+              <div class="col-md-9">
+                <p>great game</p>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-3">
-              <h5>Comment: </h5>
+          <div class="col-md-6">
+            <h3>Guests</h3><!-- random order and set amount -->
+            <div class="row">
+              <div class="col-md-3">
+                <img class="w-100 rounded" src="./img/500px%20icon.png" alt="Profile Image">
+              </div>
+              <div class="col-md-5">
+                <h5><span style="color: #999;">Name: </span><span>Ayden</span></h5>
+              </div>
+              <div class="col-md-4">
+                <h5><span style="color: #999;">Date: </span><span>09/08/2001</span></h5>
+              </div>
             </div>
-            <div class="col-md-9">
-              <p>great game</p>
+            <div class="row">
+              <div class="col-md-3">
+                <h5>Comment: </h5>
+              </div>
+              <div class="col-md-9">
+                <p>great game</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <h3>Guests</h3><!-- random order and set amount -->
-          <div class="row">
-            <div class="col-md-3">
-              <img class="w-100 rounded" src="./img/500px%20icon.png" alt="Profile Image">
-            </div>
-            <div class="col-md-5">
-              <h5><span style="color: #999;">Name: </span><span>Ayden</span></h5>
-            </div>
-            <div class="col-md-4">
-              <h5><span style="color: #999;">Date: </span><span>09/08/2001</span></h5>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3">
-              <h5>Comment: </h5>
-            </div>
-            <div class="col-md-9">
-              <p>great game</p>
-            </div>
-          </div>
-        </div>
+        <?php
+          if (!empty($_SESSION['lid'] && $_SESSION['cdid'] && $_SESSION['cpid'] && $_SESSION['start'] && $_SESSION['user'])) {
+            ?>
+              <div id="userForm">
+              </div><!-- user Form end -->
+            <?php
+          } else {
+            ?>
+              <div id="guestForm">
+              </div><!-- guest Form end -->
+            <?php
+          }
+        ?>
       </div>
-      </div>
+
 
       <!-- Specification section -->
       <div id="specification" class="row d-none">
