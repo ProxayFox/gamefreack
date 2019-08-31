@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once("./layouts/header.php");
 require_once("./mydb/databaseManager/DBEnter.db.php");
 $resultMainImg = DB::queryFirstRow("
@@ -122,6 +123,24 @@ $resultGuestReview = DB::query("
               $("#generalMessage").text("Message Sent");
             } else {
               $("#generalMessage").text("Missing Values");
+            }
+          })
+    });
+
+    $("#saveGame").click(function () {
+      $('#spinner0').addClass('spinner-border spinner-border-sm');
+      $.post("./mydb/content/userSaveGame.worker.php", {
+            GIID:        $("#formGIID").val()
+          },
+          function (data, status) {
+            $('#spinner0').removeClass('spinner-border spinner-border-sm');
+            console.log(data, status);
+            if (data === "fail0") {
+              $("#saveGameMessage").text("Server Error");
+            } else if (data === "success1") {
+              $("#saveGameMessage").text("Message Sent");
+            } else {
+              $("#saveGameMessage").text("Missing Values");
             }
           })
     });
@@ -279,8 +298,11 @@ $resultGuestReview = DB::query("
         </div><!-- col-2 end -->
       </div><!-- row end -->
       <div class="d-none" id="delivery">Not Available</div>
-      <hr>
-      <button type="button" class="w-100 btn btn-outline-success">Save Item</button>
+      <?php if (!empty($_SESSION['user'])) { ?>
+        <hr>
+        <a class="btn btn-outline-success w-100" id="saveGame">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner0"></span></a>
+        <div id="saveGameMessage"></div>
+      <?php } else { echo ""; } ?>
     </div><!--col-md-4 end -->
   </section><!-- row end -->
 

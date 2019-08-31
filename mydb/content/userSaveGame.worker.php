@@ -3,14 +3,11 @@ session_start();
 require_once("../databaseManager/DBEnter.db.php");
 
 if (!empty($_SESSION['lid'] && $_SESSION['cdid'] && $_SESSION['cpid'] && $_SESSION['start'] && $_SESSION['user'])) {
-  if (!empty($_POST['comment'] && $_POST['GIID'])) {
+  if (!empty($_POST['GIID'])) {
 
-    DB::insert('userGameComment', array(
-        'UGCID'   =>  NULL,
-        'CPID'    =>  $_SESSION['cdid'],
-        'GIID'    =>  $_POST['GIID'],
-        'date'    =>  date('Y-m-d'),
-        'comment' =>  $_POST['comment']
+    DB::insert('savedGameInventory', array(
+      'CDID'   =>  $_SESSION['cdid'],
+      'GIID'    =>  $_POST['GIID']
     ));
 
     if (DB::affectedRows() == 1) {
@@ -19,9 +16,9 @@ if (!empty($_SESSION['lid'] && $_SESSION['cdid'] && $_SESSION['cpid'] && $_SESSI
       echo "fail".DB::affectedRows();
     }
 
-  } else {
-  echo "Missing Values";
-}
+  }else {
+    echo "Missing Values";
+  }
 } else {
   header("Location: ../../index.php?notMeantToBeHere");
   exit;
