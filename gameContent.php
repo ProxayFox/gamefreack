@@ -15,6 +15,8 @@ $resultCarouselImg = DB::query("
     AND IMG REGEXP 'IMG'
 ");
 
+
+
 ?>
 
 <style>
@@ -117,7 +119,7 @@ $resultCarouselImg = DB::query("
                     src="img/gameImg/<?php echo $resultMainImg['IMG']; ?>"
                     alt="First slide"
                 >
-              </div>
+              </div><!-- col-3 end -->
               <div class="col-3">
                 <img
                     class="d-block mx-auto align w-100 rounded"
@@ -126,7 +128,7 @@ $resultCarouselImg = DB::query("
                     src="img/gameImg/<?php echo $imageArrayGame[$counterGame]; ?>"
                     alt="First slide"
                 >
-              </div>
+              </div><!-- col-3 end -->
               <div class="col-3">
                 <img
                     class="d-block mx-auto align w-100 rounded"
@@ -135,7 +137,7 @@ $resultCarouselImg = DB::query("
                     src="img/gameImg/<?php echo $imageArrayGame[$counterGame + 1]; ?>"
                     alt="First slide"
                 >
-              </div>
+              </div><!-- col-3 end -->
               <div class="col-3">
                 <img
                     class="d-block mx-auto align w-100 rounded"
@@ -144,8 +146,9 @@ $resultCarouselImg = DB::query("
                     src="img/gameImg/<?php echo $imageArrayGame[$counterGame + 2]; ?>"
                     alt="First slide"
                 >
-              </div>
-            </div>
+              </div><!-- col-3 end -->
+            </div><!-- row end -->
+          </div><!-- Carousel Item end-->
             <?php } ?>
         </div><!-- Carousel Inner end -->
         <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
@@ -158,8 +161,8 @@ $resultCarouselImg = DB::query("
         </a>
         </div>
       </div><!-- Carousel end -->
-    </div>
     </div><!--col-md-8 end--->
+    </div><!-- For some reason having this stops the left side from sticking to the carousel-->
 
     <!-- right side Product saving and small information -->
     <div class="col-md-4 container">
