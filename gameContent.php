@@ -81,9 +81,9 @@ $resultUserReview = DB::query("
 
     $("#btnUserComment").click(function () {
       $('#spinner0').addClass('spinner-border spinner-border-sm');
-      $.post("./mydb/content/gameContent.worker.php", {
+      $.post("./mydb/content/userGameContent.worker.php", {
         comment:     $("#userComment").val(),
-        GIID:        $("#formGIID").val(),
+        GIID:        $("#formGIID").val()
       },
       function (data, status) {
         $('#spinner0').removeClass('spinner-border spinner-border-sm');
@@ -97,6 +97,27 @@ $resultUserReview = DB::query("
           $("#generalMessage").text("Missing Values");
         }
       })
+    });
+
+    $("#btnGuestComment").click(function () {
+      $('#spinner0').addClass('spinner-border spinner-border-sm');
+      $.post("./mydb/content/guestGameContent.worker.php", {
+            formUsername:    $("#formUsername").val(),
+            comment:     $("#userComment").val(),
+            GIID:        $("#formGIID").val()
+          },
+          function (data, status) {
+            $('#spinner0').removeClass('spinner-border spinner-border-sm');
+            $("#userComment").val("");
+            console.log(data, status);
+            if (data === "fail0") {
+              $("#generalMessage").text("Server Error");
+            } else if (data === "success1") {
+              $("#generalMessage").text("Message Sent");
+            } else {
+              $("#generalMessage").text("Missing Values");
+            }
+          })
     });
 
   });
@@ -288,7 +309,6 @@ $resultUserReview = DB::query("
         <p><?php echo $resultGameQuery['briefDescription']; ?></p>
         <br>
         <h3>Long Description</h3>
-        <h3>Long Description</h3>
         <p><?php echo $resultGameQuery['longDescription']; ?></p>
       </div><!-- overview end -->
 
@@ -368,6 +388,19 @@ $resultUserReview = DB::query("
             ?>
               <div class="container" id="guestForm">
                 <h4>Create a Review</h4>
+                <div class="row">
+                  <div class="col-2"></div><!-- empty div for centering -->
+                  <div class="col-8 form-group">
+                    <label for="formUsername">Enter your comment</label>
+                    <input type="text" id="formUsername" class="form-control" placeholder="If value is empty, name will be assigned">
+                    <label for="userComment">Enter your comment</label>
+                    <textarea type="text" id="userComment" style="margin-bottom: 5px;" class="form-control" placeholder="Enter Comment"></textarea>
+                    <input id="formGIID" type="hidden" value="<?php echo $_GET['GIID']; ?>">
+                    <a class="btn btn-outline-primary" id="btnGuestComment">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner0"></span></a>
+                    <div id="generalMessage"></div>
+                  </div><!-- col-8 end -->
+                  <div class="col-2"></div>
+                </div><!-- row end -->
               </div><!-- guest Form end -->
             <?php
           }
