@@ -75,7 +75,7 @@ CREATE TABLE guestGameComments(
   GIID INT(11) NOT NULL,
   username VARCHAR(255) NOT NULL,
   date date NOT NULL,
-  comment TEXT(500) NOT NULL,
+  comment TEXT(5000) NOT NULL,
   FOREIGN KEY (GIID)  REFERENCES gameInventory(GIID) ON DELETE CASCADE
 );
 
@@ -84,7 +84,7 @@ CREATE TABLE userGameComment(
   CPID INT(11) NOT NULL,
   GIID INT(11) NOT NULL,
   date date NOT NULL,
-  comment TEXT(500) NOT NULL,
+  comment TEXT(5000) NOT NULL,
   FOREIGN KEY (CPID)  REFERENCES clientProfile(CPID) ON DELETE CASCADE,
   FOREIGN KEY (GIID)  REFERENCES gameInventory(GIID) ON DELETE CASCADE
 );
@@ -121,7 +121,7 @@ CREATE TABLE guestConsoleComments(
   CIID INT(11) NOT NULL,
   username VARCHAR(255) NOT NULL,
   date date NOT NULL,
-  comment TEXT(500) NOT NULL,
+  comment TEXT(5000) NOT NULL,
   FOREIGN KEY (CIID) 	REFERENCES consoleInventory(CIID) ON DELETE CASCADE
 );
 
@@ -130,7 +130,7 @@ CREATE TABLE userConsoleComment(
   CPID INT(11) NOT NULL,
   CIID INT(11) NOT NULL,
   date date NOT NULL,
-  comment TEXT(500) NOT NULL,
+  comment TEXT(5000) NOT NULL,
   FOREIGN KEY (CPID) 	REFERENCES clientProfile(CPID) ON DELETE CASCADE,
   FOREIGN KEY (CIID) 	REFERENCES consoleInventory(CIID) ON DELETE CASCADE
 );
