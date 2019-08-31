@@ -28,6 +28,12 @@ $resultUserReview = DB::query("
   ORDER BY RAND() LIMIT 6
 ");
 
+$resultGuestReview = DB::query("
+  SELECT username, date, comment
+  FROM guestgamecomments 
+  WHERE GIID = '".$_GET['GIID']."'
+");
+
 ?>
 
 <style>
@@ -345,15 +351,18 @@ $resultUserReview = DB::query("
         </div><!-- col-md-6 end -->
         <div class="col-md-6">
           <h3>Guests</h3><!-- random order and set amount -->
+          <?php
+            foreach ($resultGuestReview as $row2){
+          ?>
           <div class="row">
             <div class="col-md-3">
               <img class="w-100 rounded" src="./img/500px%20icon.png" alt="Profile Image">
             </div><!-- col-md-3 end -->
             <div class="col-md-5">
-              <h5><span style="color: #999;">Name: </span><span>Ayden</span></h5>
+              <h5><span style="color: #999;">Name: </span><span><?php echo $row2['username']; ?></span></h5>
             </div><!-- col-md-5 end -->
             <div class="col-md-4">
-              <p><span style="color: #999;">Date: </span><span>09/08/2001</span></p>
+              <p><span style="color: #999;">Date: </span><span><?php echo $row2['date']; ?></span></p>
             </div><!-- col-md-4 end -->
           </div><!-- row end -->
           <div class="row">
@@ -361,9 +370,10 @@ $resultUserReview = DB::query("
               <h5>Comment: </h5>
             </div><!-- col-md-3 end -->
             <div class="col-md-9">
-              <p>great game</p>
+              <p><?php echo $row2['comment']; ?></p>
             </div><!--col-md-9 end -->
           </div><!-- row end -->
+          <?php } ?>
         </div><!-- col-md-6 end -->
         <hr>
         <?php
