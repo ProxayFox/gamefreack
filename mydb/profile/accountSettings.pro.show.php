@@ -75,18 +75,27 @@
     });
   });
 
-  $(document).ready(function() {
-    $("#imageUpdate").click(function () {
-      $('#spinner1').addClass('spinner-border spinner-border-sm');
-      $.post("./mydb/profile/accountSettingsWorker/accountSettings.image.pro.db.php", {
-            imageName: $("#image").val()
-          },
-          function (data, status) {
-            $('#spinner1').removeClass('spinner-border spinner-border-sm');
-            $("#image").val("");
-            console.log(data, status);
-          }
-      )
+  $("#imageUpdate").click(function(){
+    const fd = new FormData();
+    const files = $('#image')[0].files[0];
+    fd.append('file',files);
+
+    $.ajax({
+      url: './mydb/profile/accountSettingsWorker/accountSettings.image.pro.db.php',
+      type: 'post',
+      data: fd,
+      contentType: false,
+      processData: false,
+      success: function(response){
+        if(response != 0){
+          $("#img").attr("src",response);
+          $(".preview img").show(); // Display image element
+          $("#imgMessage").text("uploaded");
+        }else{
+          alert('file not uploaded');
+          $("#imgMessage").text("uploaded");
+        }
+      },
     });
   });
 
@@ -204,19 +213,37 @@
   <hr>
 
   <!-- user profile image input -->
-  <div id="img">
-    <label for="image">Update Profile Image</label>
-    <input
-        type="file"
-        class="form-control-file"
-        id="image"
-    ><!-- input end -->
+  <div class="row">
+    <div class="col-md-4">
+      <?php
+        $resultImage = DB::queryFirstRow("SELECT UIMG FROM clientProfile WHERE CPID = ".$_SESSION['cpid']);
+      ?>
+      <img
+          src="img/profileIMG/<?php if (!empty($resultImage['UIMG'])) { echo $resultImage['UIMG'];} else {echo "44fdc40.jpg";} ?>"
+          id="img"
+          class="w-75 d-block mx-auto rounded"
+          alt="Profile Image"
+      >
+    </div>
+    <div class="col-md-8">
+      <form method="post" action="" enctype="multipart/form-data" id="imgForm">
+        <div id="img">
+          <label for="image">Update Profile Image</label>
+          <input
+              type="file"
+              class="form-control-file"
+              id="image"
+          ><!-- input end -->
+        </div>
+      </form>
+      <!-- submit for user profile image -->
+      <div style="padding-top: 10px; padding-bottom: 10px;">
+        <a class="btn btn-outline-primary" id="imageUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner1"></span></a>
+        <div id="imgMessage"></div>
+      </div>
+    </div>
   </div>
 
-  <!-- submit for user profile image -->
-  <div style="padding-top: 10px; padding-bottom: 10px;">
-    <a class="btn btn-outline-primary" id="imageUpdate">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner1"></span></a>
-  </div>
 
 </section>
 

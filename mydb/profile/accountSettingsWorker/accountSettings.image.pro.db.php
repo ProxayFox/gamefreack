@@ -5,10 +5,10 @@ require_once("../../databaseManager/DBEnter.db.php");
 print_r($_FILES);
 
 if (!empty($_SESSION['lid'] && $_SESSION['cdid'] && $_SESSION['cpid'] && $_SESSION['start'] && $_SESSION['user'])) {
-  if (!empty($_POST['imageName'])) {
+  if (!empty($_POST['file'])) {
 
     // Image Variable
-    $img = $_FILES['imageName'];
+    $img = $_FILES['file'];
     //image Array Assessment
     //imgTempName = the temp location of the file
     $imgName = $img['name'];
