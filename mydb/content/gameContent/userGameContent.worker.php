@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("../databaseManager/DBEnter.db.php");
+require_once("../../databaseManager/DBEnter.db.php");
 
 if (!empty($_SESSION['lid'] && $_SESSION['cdid'] && $_SESSION['cpid'] && $_SESSION['start'] && $_SESSION['user'])) {
   if (!empty($_POST['comment'] && $_POST['GIID'])) {

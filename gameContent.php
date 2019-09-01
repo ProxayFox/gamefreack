@@ -88,7 +88,7 @@ $resultGuestReview = DB::query("
 
     $("#btnUserComment").click(function () {
       $('#spinner0').addClass('spinner-border spinner-border-sm');
-      $.post("./mydb/content/userGameContent.worker.php", {
+      $.post("./mydb/content/gameContent/userGameContent.worker.php", {
         comment:     $("#userComment").val(),
         GIID:        $("#formGIID").val()
       },
@@ -108,7 +108,7 @@ $resultGuestReview = DB::query("
 
     $("#btnGuestComment").click(function () {
       $('#spinner0').addClass('spinner-border spinner-border-sm');
-      $.post("./mydb/content/guestGameContent.worker.php", {
+      $.post("./mydb/content/gameContent/guestGameContent.worker.php", {
             formUsername:    $("#formUsername").val(),
             comment:     $("#userComment").val(),
             GIID:        $("#formGIID").val()
@@ -129,14 +129,14 @@ $resultGuestReview = DB::query("
 
     $("#saveGame").click(function () {
       $('#spinner0').addClass('spinner-border spinner-border-sm');
-      $.post("./mydb/content/userSaveGame.worker.php", {
+      $.post("./mydb/content/gameContent/userSaveGame.worker.php", {
             GIID:        $("#formGIID").val()
           },
           function (data, status) {
             $('#spinner0').removeClass('spinner-border spinner-border-sm');
             console.log(data, status);
             if (data === "fail0") {
-              $("#saveGameMessage").text("Server Error");
+              $("#saveGameMessage").text("Server Error or Duplicate");
             } else if (data === "success1") {
               $("#saveGameMessage").text("Message Sent");
             } else {
