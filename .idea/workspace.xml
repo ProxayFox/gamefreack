@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/gameContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/gameContent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/content/guestGameContent.worker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/content/userGameContent.worker.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydb/content/userSaveGame.worker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/consoleContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/consoleContent.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,20 +42,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gameContent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="138" column="55" selection-start-line="138" selection-start-column="55" selection-end-line="138" selection-end-column="55" />
+            <state relative-caret-position="484">
+              <caret line="138" column="55" selection-end-line="495" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mydb/content/gameContent/userSaveGame.worker.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/consoleContent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="92">
+              <caret line="131" column="49" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -76,6 +73,7 @@
       <find>long</find>
       <find>save ite</find>
       <find>server</find>
+      <find>CIID</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,6 +94,7 @@
         <option value="$PROJECT_DIR$/mydb/content/gameContent/userGameContent.worker.php" />
         <option value="$PROJECT_DIR$/mydb/content/gameContent/userSaveGame.worker.php" />
         <option value="$PROJECT_DIR$/gameContent.php" />
+        <option value="$PROJECT_DIR$/consoleContent.php" />
       </list>
     </option>
   </component>
@@ -135,7 +134,7 @@
               <item name="gamefreack" type="462c0819:PsiDirectoryNode" />
               <item name="mydb" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="gameContent" type="462c0819:PsiDirectoryNode" />
+              <item name="consoleContent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gamefreack" type="b2602c69:ProjectViewProjectNode" />
@@ -263,12 +262,12 @@
       <workItem from="1567241748872" duration="522000" />
       <workItem from="1567242288461" duration="15879000" />
       <workItem from="1567293345045" duration="928000" />
-      <workItem from="1567294315846" duration="1845000" />
+      <workItem from="1567294315846" duration="2352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22378000" />
+    <option name="totallyTimeSpent" value="22885000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -283,7 +282,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.19280206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.19280206" />
       <window_info id="Structure" order="1" sideWeight="0.5011338" side_tool="true" weight="0.18316196" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -302,7 +301,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.18894601" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18894601" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,13 +383,6 @@
     <entry file="file://$PROJECT_DIR$/mydb/profile/Overview.pro.show.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-276" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="98" column="14" lean-forward="true" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="37" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SQL/SQL.SQL">
@@ -495,10 +487,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2769">
+          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gameContent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="138" column="55" selection-start-line="138" selection-start-column="55" selection-end-line="138" selection-end-column="55" />
+        <state relative-caret-position="484">
+          <caret line="138" column="55" selection-end-line="495" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consoleContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="131" column="49" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
         </state>
       </provider>
     </entry>
