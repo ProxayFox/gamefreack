@@ -3,12 +3,12 @@ session_start();
 require_once("../../databaseManager/DBEnter.db.php");
 
 if (!empty($_SESSION['lid'] && $_SESSION['cdid'] && $_SESSION['cpid'] && $_SESSION['start'] && $_SESSION['user'])) {
-  if (!empty($_POST['comment'] && $_POST['GIID'])) {
+  if (!empty($_POST['comment'] && $_POST['CIID'])) {
 
-    DB::insert('userGameComment', array(
-        'UGCID'   =>  NULL,
+    DB::insert('userConsoleComment', array(
+        'UCCID'   =>  NULL,
         'CPID'    =>  $_SESSION['cdid'],
-        'GIID'    =>  $_POST['GIID'],
+        'CIID'    =>  $_POST['CIID'],
         'date'    =>  date('Y-m-d'),
         'comment' =>  $_POST['comment']
     ));

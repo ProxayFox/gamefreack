@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d16b40f-52c9-441b-aa84-58fd4f3aafa9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PS4.php" beforeDir="false" afterPath="$PROJECT_DIR$/PS4.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/consoleContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/consoleContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/content/consoleContent/guestConsoleContent.worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/content/consoleContent/guestConsoleContent.worker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/content/consoleContent/userConsoleContent.worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/content/consoleContent/userConsoleContent.worker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mydb/content/consoleContent/userSaveConsole.worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/mydb/content/consoleContent/userSaveConsole.worker.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,21 +48,36 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gameContent.php">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="138" column="55" selection-end-line="495" />
+            <state relative-caret-position="481">
+              <caret line="232" column="48" selection-start-line="232" selection-start-column="34" selection-end-line="232" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/consoleContent.php">
+        <entry file="file://$PROJECT_DIR$/PS4.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="131" column="49" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
+            <state relative-caret-position="345">
+              <caret line="78" column="63" lean-forward="true" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xbox.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nintendo.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PC.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -74,6 +94,9 @@
       <find>save ite</find>
       <find>server</find>
       <find>CIID</find>
+      <find>$resultGameQuery</find>
+      <find>giid</find>
+      <find>GIID</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,7 +109,6 @@
         <option value="$PROJECT_DIR$/SQL/SQL.SQL" />
         <option value="$PROJECT_DIR$/mydb/content/gameContent.worker.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e788f590-6aa1-4e00-9606-88791faeb00e/console.sql" />
         <option value="$PROJECT_DIR$/mydb/content/guestGameContent.worker.php" />
         <option value="$PROJECT_DIR$/mydb/content/userGameContent.worker.php" />
         <option value="$PROJECT_DIR$/mydb/content/userSaveGame.worker.php" />
@@ -94,7 +116,12 @@
         <option value="$PROJECT_DIR$/mydb/content/gameContent/userGameContent.worker.php" />
         <option value="$PROJECT_DIR$/mydb/content/gameContent/userSaveGame.worker.php" />
         <option value="$PROJECT_DIR$/gameContent.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/e788f590-6aa1-4e00-9606-88791faeb00e/console.sql" />
         <option value="$PROJECT_DIR$/consoleContent.php" />
+        <option value="$PROJECT_DIR$/mydb/content/consoleContent/userSaveConsole.worker.php" />
+        <option value="$PROJECT_DIR$/mydb/content/consoleContent/userConsoleContent.worker.php" />
+        <option value="$PROJECT_DIR$/mydb/content/consoleContent/guestConsoleContent.worker.php" />
+        <option value="$PROJECT_DIR$/PS4.php" />
       </list>
     </option>
   </component>
@@ -262,12 +289,12 @@
       <workItem from="1567241748872" duration="522000" />
       <workItem from="1567242288461" duration="15879000" />
       <workItem from="1567293345045" duration="928000" />
-      <workItem from="1567294315846" duration="2352000" />
+      <workItem from="1567294315846" duration="3945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22885000" />
+    <option name="totallyTimeSpent" value="24478000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -301,7 +328,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18894601" />
+      <window_info anchor="right" id="Database" order="3" weight="0.18894601" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,13 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e788f590-6aa1-4e00-9606-88791faeb00e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" selection-start-column="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mydb/content/userGameContent.worker.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -446,13 +466,6 @@
       </provider>
     </entry>
     <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/savedgameinventory">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/clientdata">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -487,10 +500,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e788f590-6aa1-4e00-9606-88791faeb00e/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2769">
-          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+        <state relative-caret-position="46">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -501,10 +514,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/savedconsoleinventory">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/clientdata">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/clientprofile">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/login">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydb/content/consoleContent/userSaveConsole.worker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/userconsolecomment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydb/content/consoleContent/userConsoleContent.worker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e788f590-6aa1-4e00-9606-88791faeb00e/schema/gamefreaks/table/guestconsolecomments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mydb/content/consoleContent/guestConsoleContent.worker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/consoleContent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="131" column="49" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
+        <state relative-caret-position="-647">
+          <caret line="131" column="66" selection-start-line="131" selection-start-column="66" selection-end-line="131" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PC.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nintendo.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xbox.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="232" column="48" selection-start-line="232" selection-start-column="34" selection-end-line="232" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PS4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="78" column="63" lean-forward="true" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
         </state>
       </provider>
     </entry>

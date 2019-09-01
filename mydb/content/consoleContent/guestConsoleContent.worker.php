@@ -1,14 +1,14 @@
 <?php
 require_once("../../databaseManager/DBEnter.db.php");
 
-if (!empty($_POST['comment'] && $_POST['GIID'])) {
+if (!empty($_POST['comment'] && $_POST['CIID'])) {
 
   if (!empty($_POST['formUsername'])) {
     $username = $_POST['formUsername'];
 
-    DB::insert('guestGameComments', array(
-        'GGCID'   =>  NULL,
-        'GIID'    =>  $_POST['GIID'],
+    DB::insert('guestConsoleComments', array(
+        'GCCID'   =>  NULL,
+        'CIID'    =>  $_POST['CIID'],
         'username'=>  $username,
         'date'    =>  date('Y-m-d'),
         'comment' =>  $_POST['comment']
@@ -16,9 +16,9 @@ if (!empty($_POST['comment'] && $_POST['GIID'])) {
   } else {
     $username = rand(); //Assigning a random value as the name
 
-    DB::insert('guestGameComments', array(
-        'GGCID'   =>  NULL,
-        'GIID'    =>  $_POST['GIID'],
+    DB::insert('guestConsoleComments', array(
+        'GCCID'   =>  NULL,
+        'CIID'    =>  $_POST['CIID'],
         'username'=>  $username,
         'date'    =>  date('Y-m-d'),
         'comment' =>  $_POST['comment']

@@ -90,7 +90,7 @@ $resultGuestReview = DB::query("
       $('#spinner0').addClass('spinner-border spinner-border-sm');
       $.post("./mydb/content/consoleContent/userConsoleContent.worker.php", {
             comment:     $("#userComment").val(),
-            GIID:        $("#formGIID").val()
+            CIID:        $("#formCIID").val()
           },
           function (data, status) {
             $('#spinner0').removeClass('spinner-border spinner-border-sm');
@@ -111,7 +111,7 @@ $resultGuestReview = DB::query("
       $.post("./mydb/content/consoleContent/guestConsoleContent.worker.php", {
             formUsername:    $("#formUsername").val(),
             comment:     $("#userComment").val(),
-            GIID:        $("#formGIID").val()
+            CIID:        $("#formCIID").val()
           },
           function (data, status) {
             $('#spinner0').removeClass('spinner-border spinner-border-sm');
@@ -129,8 +129,8 @@ $resultGuestReview = DB::query("
 
     $("#saveGame").click(function () {
       $('#spinner0').addClass('spinner-border spinner-border-sm');
-      $.post("./mydb/content/consoleContent/userConsoleGame.worker.php", {
-            GIID:        $("#formGIID").val()
+      $.post("./mydb/content/consoleContent/userSaveConsole.worker.php", {
+            CIID:        $("#formCIID").val()
           },
           function (data, status) {
             $('#spinner0').removeClass('spinner-border spinner-border-sm');
@@ -180,7 +180,7 @@ $resultGuestReview = DB::query("
     <div class="col-md-8">
       <div>
         <div>
-          <img id="mainImage" class="w-75 d-block mx-auto rounded" src="img/gameImg/<?php echo $resultMainImg['IMG']; ?>" alt="Game Image">
+          <img id="mainImage" class="w-75 d-block mx-auto rounded" src="img/consoleImg/<?php echo $resultMainImg['IMG']; ?>" alt="Game Image">
         </div>
 
         <!-- carousel under the main image, also a selector -->
@@ -190,21 +190,21 @@ $resultGuestReview = DB::query("
             // Database query for game Images
             $resultCarouselImg = DB::query("
             SELECT IMG 
-            FROM gameinventoryimg 
-            WHERE GIID = '".$_GET['GIID']."'
+            FROM consoleinventoryimg 
+            WHERE CIID = '".$_GET['CIID']."'
               AND IMG REGEXP 'IMG'
             ORDER BY RAND()
           ");
 
             //assigning arrays
-            $imageArrayGame = array();
+            $imageArrayConsole = array();
 
             //pushing the array's
             foreach ($resultCarouselImg as $row) {
-              array_push($imageArrayGame, $row['IMG']);
+              array_push($imageArrayConsole, $row['IMG']);
             }
 
-            for ($counterGame = 0; $counterGame <= count($imageArrayGame)-1; $counterGame = $counterGame+=2) {
+            for ($counterGame = 0; $counterGame <= count($imageArrayConsole)-1; $counterGame = $counterGame+=2) {
               if ($counterGame == 0){
                 $activeGame = "active";
               } else {
@@ -217,8 +217,8 @@ $resultGuestReview = DB::query("
                     <img
                         class="d-block mx-auto align w-100 rounded"
                         id="1"
-                        onclick="imgOnClickChange('img/gameImg/<?php echo $resultMainImg['IMG']; ?>')"
-                        src="img/gameImg/<?php echo $resultMainImg['IMG']; ?>"
+                        onclick="imgOnClickChange('./img/consoleimg/<?php echo $resultMainImg['IMG']; ?>')"
+                        src="img/consoleimg/<?php echo $resultMainImg['IMG']; ?>"
                         alt="First slide"
                     >
                   </div><!-- col-3 end -->
@@ -226,8 +226,8 @@ $resultGuestReview = DB::query("
                     <img
                         class="d-block mx-auto align w-100 rounded"
                         id="2"
-                        onclick="imgOnClickChange('img/gameImg/<?php echo $imageArrayGame[$counterGame]; ?>')"
-                        src="img/gameImg/<?php echo $imageArrayGame[$counterGame]; ?>"
+                        onclick="imgOnClickChange('./img/consoleimg/<?php echo $imageArrayConsole[$counterGame]; ?>')"
+                        src="img/consoleimg/<?php echo $imageArrayConsole[$counterGame]; ?>"
                         alt="First slide"
                     >
                   </div><!-- col-3 end -->
@@ -235,8 +235,8 @@ $resultGuestReview = DB::query("
                     <img
                         class="d-block mx-auto align w-100 rounded"
                         id="3"
-                        onclick="imgOnClickChange('img/gameImg/<?php echo $imageArrayGame[$counterGame + 1]; ?>')"
-                        src="img/gameImg/<?php echo $imageArrayGame[$counterGame + 1]; ?>"
+                        onclick="imgOnClickChange('./img/consoleimg/<?php echo $imageArrayConsole[$counterGame + 1]; ?>')"
+                        src="img/consoleimg/<?php echo $imageArrayConsole[$counterGame + 1]; ?>"
                         alt="First slide"
                     >
                   </div><!-- col-3 end -->
@@ -244,8 +244,8 @@ $resultGuestReview = DB::query("
                     <img
                         class="d-block mx-auto align w-100 rounded"
                         id="4"
-                        onclick="imgOnClickChange('img/gameImg/<?php echo $imageArrayGame[$counterGame + 2]; ?>')"
-                        src="img/gameImg/<?php echo $imageArrayGame[$counterGame + 2]; ?>"
+                        onclick="imgOnClickChange('./img/consoleimg/<?php echo $imageArrayGame[$counterGame + 2]; ?>')"
+                        src="img/consoleimg/<?php echo $imageArrayGame[$counterGame + 2]; ?>"
                         alt="First slide"
                     >
                   </div><!-- col-3 end -->
@@ -408,7 +408,7 @@ $resultGuestReview = DB::query("
                 <div class="col-8 form-group">
                   <label for="userComment">Enter your comment</label>
                   <textarea type="text" id="userComment" style="margin-bottom: 5px;" class="form-control" placeholder="Enter Comment"></textarea>
-                  <input id="formGIID" type="hidden" value="<?php echo $_GET['GIID']; ?>">
+                  <input id="formCIID" type="hidden" value="<?php echo $_GET['CIID']; ?>">
                   <a class="btn btn-outline-primary" id="btnUserComment">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner0"></span></a>
                   <div id="generalMessage"></div>
                 </div><!-- col-8 end -->
@@ -427,7 +427,7 @@ $resultGuestReview = DB::query("
                   <input type="text" id="formUsername" class="form-control" placeholder="If value is empty, name will be assigned">
                   <label for="userComment">Enter your comment</label>
                   <textarea type="text" id="userComment" style="margin-bottom: 5px;" class="form-control" placeholder="Enter Comment"></textarea>
-                  <input id="formGIID" type="hidden" value="<?php echo $_GET['GIID']; ?>">
+                  <input id="formCIID" type="hidden" value="<?php echo $_GET['CIID']; ?>">
                   <a class="btn btn-outline-primary" id="btnGuestComment">Update<span style="height:15px; width:15px; margin-right: 10px;" id="spinner0"></span></a>
                   <div id="generalMessage"></div>
                 </div><!-- col-8 end -->
