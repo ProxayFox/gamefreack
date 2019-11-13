@@ -89,7 +89,6 @@
       <div id="Game" class="carousel slide" data-ride="carousel">
         <!-- recommended carousel start -->
         <div class="carousel-inner">
-          <!-- Slide 1 -->
           <?php
             // Database query for game data
             $resultGame = DB::query('
@@ -103,11 +102,13 @@
           //assigning arrays
           $imageArrayGame = array();
           $namesArrayGame = array();
+          $GIIDArrayGame = array();
 
           //pushing the array's
           foreach ($resultGame as $row) {
             array_push($imageArrayGame, $row['IMG']);
             array_push($namesArrayGame, $row['productName']);
+            array_push($GIIDArrayGame, $row['GIID']);
           }
 
           for ($counterGame = 0; $counterGame <= count($imageArrayGame)-1; $counterGame = $counterGame+=2) {
@@ -127,7 +128,7 @@
                          style="width: 320px;"/>
                     <div class="caption">
                       <h4 class="text-center"><?php echo $namesArrayGame[$counterGame]; ?></h4>
-                      <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
+                      <p><a href="gameContent.php?GIID=<?php echo $GIIDArrayGame[$counterGame]; ?>" class="btn btn-primary btn-block">Open</a></p>
                     </div><!-- caption end -->
                   </div><!-- thumbnail end -->
                 </div><!-- Border end -->
@@ -140,7 +141,7 @@
                          style="width: 320px;"/>
                     <div class="caption">
                       <h4 class="text-center"><?php echo $namesArrayGame[$counterGame + 1]; ?></h4>
-                      <p><a href="#" class="btn btn-primary btn-block">Open</a></p>
+                      <p><a href="gameContent.php?GIID=<?php echo $GIIDArrayGame[$counterGame + 1]; ?>" class="btn btn-primary btn-block">Open</a></p>
                     </div><!-- caption end -->
                   </div><!-- thumbnail end -->
                 </div><!-- Border end -->
@@ -188,11 +189,13 @@
         //assigning arrays
         $imageArrayConsoles = array();
         $namesArrayConsoles = array();
+        $CIIDArrayGame = array();
 
         //pushing the array's
         foreach ($resultConsoles as $row) {
           array_push($imageArrayConsoles, $row['IMG']);
           array_push($namesArrayConsoles, $row['productName']);
+          array_push($CIIDArrayGame, $row['CIID']);
         }
 
         for ($counterConsoles = 0; $counterConsoles <= count($imageArrayConsoles)-1; $counterConsoles = $counterConsoles+=2) {
@@ -214,7 +217,7 @@
                          style="width: 320px;"/>
                     <div class="caption">
                       <h4 class="text-center"><?php echo $namesArrayConsoles[$counterConsoles]; ?></h4>
-                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                      <p><a href="consoleContent.php?CIID=<?php echo $CIIDArrayGame[$counterConsoles]; ?>" class="btn btn-primary btn-block">Open</a></p>
                     </div><!-- caption end -->
                   </div><!-- thumbnail end -->
                 </div><!-- Border end -->
@@ -227,7 +230,7 @@
                          style="width: 320px;"/>
                     <div class="caption">
                       <h4 class="text-center"><?php echo $namesArrayConsoles[$counterConsoles + 1]; ?></h4>
-                      <p><a href="http://bootsnipp.com/" class="btn btn-primary btn-block">Open</a></p>
+                      <p><a href="consoleContent.php?CIID=<?php echo $CIIDArrayGame[$counterConsoles + 1]; ?>" class="btn btn-primary btn-block">Open</a></p>
                     </div><!-- caption end -->
                   </div><!-- thumbnail end -->
                 </div><!-- Border end -->
